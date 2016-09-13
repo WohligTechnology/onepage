@@ -45,6 +45,11 @@ url: "/press-media",
 templateUrl: "views/template.html",
 controller: 'PressCtrl'
 })
+.state('about', {
+url: "/about",
+templateUrl: "views/template.html",
+controller: 'AboutCtrl'
+})
 
 .state('contact-us', {
 url: "/contact-us",

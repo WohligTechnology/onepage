@@ -9,6 +9,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Home");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.section = {
+      head: "views/section/section.html",
+      one: "views/section/section1.html",
+      two: "views/section/section2.html",
+      three: "views/section/section3.html",
+      four: "views/section/section4.html",
+      five: "views/section/section5.html",
+      six: "views/section/section6.html",
+      seven: "views/section/section7.html",
+  };
+
   $scope.changePage = function(text) {
     console.log(text);
     var length = $(".fp-section").length;
@@ -24,24 +35,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.homeval = text;
     switch (text) {
       case "contact":
-        $.fn.fullpage.moveTo(7);
-        break;
-      case "stockists":
-        $.fn.fullpage.moveTo(6);
-        break;
-      case "press":
-        $.fn.fullpage.moveTo(5);
-        break;
-      case "collection":
-        $.fn.fullpage.moveTo(4);
-        break;
-      case "ananya":
-        $.fn.fullpage.moveTo(3);
+        $.fn.fullpage.moveTo(8);
         break;
       case "about":
+        $.fn.fullpage.moveTo(7);
+        break;
+      case "gallery":
+        $.fn.fullpage.moveTo(6);
+        break;
+      case "video":
+        $.fn.fullpage.moveTo(5);
+        break;
+      case "whyus":
+        $.fn.fullpage.moveTo(4);
+        break;
+      case "event":
+        $.fn.fullpage.moveTo(3);
+        break;
+      case "host":
         $.fn.fullpage.moveTo(2);
         break;
-      case "home":
+      case "header":
         $.fn.fullpage.moveTo(1);
         break;
       default:
@@ -56,31 +70,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.changePage($stateParams.id);
     }, 1000);
   });
-
-
-
-
-
-
-  $scope.section = {
-      head: "views/section/section.html",
-      one: "views/section/section1.html",
-      two: "views/section/section2.html",
-      three: "views/section/section3.html",
-      four: "views/section/section4.html",
-      five: "views/section/section5.html",
-      six: "views/section/section6.html"
-  };
-
-
-
-
-
-
-
-
-
-
 })
 
 .controller('headerctrl', function($scope, TemplateService) {
