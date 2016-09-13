@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700';
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -7,108 +8,119 @@
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 /* Bootstrap Variables Goes Here */
-$brand-primary: #0d9dff !default;
+$brand-primary: #dfc988 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
-$brand-danger:  #fc483f !default;
-$brand-info:    #000072 !default;
+$brand-danger: #fc483f !default;
+$brand-info: #4f0c03 !default;
+$white: #ffffff !default;
+$font-family-sans-serif: "Proxima Nova", "Raleway", sans-serif !default;
+$font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Light.otf");
+    font-weight: 300;
+}
+/* mixing*/
+@mixin placeholder {
+    $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+    @each $placeholder in $placeholders {
+        &:#{$placeholder}-placeholder {
+            @content;
+        }
+    }
+}
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+@mixin x-appearance ($value) {
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
 img.loading {
-  text-align: center;
-  opacity: 1;
-  width: 32px !important;
-  height: auto;
+    text-align: center;
+    opacity: 1;
+    width: 32px !important;
+    height: auto;
 }
 img {
-  opacity: 0;
-  @include transition(all 300ms ease);
+    opacity: 0;
+    @include transition(all 300ms ease);
 }
 img.doneLoading {
-  opacity: 1;
+    opacity: 1;
 }
 nav li:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 #map img {
-  opacity: 1;
+    opacity: 1;
 }
-a, .btn,[ui-sref] {
-  cursor: pointer;
-  @include transition(all ease 300ms);
+.btn,
+[ui-sref],
+a {
+    cursor: pointer;
+    @include transition(all ease 300ms);
 }
 //bootstrap forms
-.input-lg,
+.btn,
+.form-control,
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-.btn,
-.form-control {
-  border-radius: 0;
-  @include box-shadow(none);
+.input-lg {
+    border-radius: 0;
+    @include box-shadow(none);
 }
 .form-control:focus {
-  border-color: $brand-primary;
-  outline: 0;
-  @include box-shadow(none);
+    border-color: $brand-primary;
+    outline: 0;
+    @include box-shadow(none);
 }
 //bootstrap forms
 /* Start writing sass here */
-.navbar-default{
-  background-color: #4f0c03;
-  li{
-    a{
-      color: #231f20;
-    }
-  }
+.font-raleway {
+    font-family: 'Raleway';
 }
-
-.features{
-  a{
+.font-proxi {
+    font-family: 'proxima nova';
+}
+.font-light {
+    font-weight: 300;
+}
+.font-bold {
+    font-weight: 700;
+}
+.color-base {
+    color: $brand-info;
+}
+.color-primary {
+    color-primary: $brand-primary;
+}
+.color-white {
+    color: $white;
+}
+.lt-list{
+  ul{
+    list-style: none;
     display: block;
-    font-size: 20px;
-    span{
-      display: block;
-      text-align: center;
-      font-size: 12px;
-    }
-    &:hover{
-      text-decoration: none;
-    }
-  }
-}
-
-.navigation{
-  padding: 40px 0 20px;
-  li{
-    margin: 0 5px;
-    a{
-      color: #fff;
+    li{
       display: inline-block;
-      transition: all .9s ease-in-out;
-      &:hover{
-        text-decoration: none;
-        transform: scale(1.3);
-      }
     }
   }
 }
-
-.logo-center{
-  padding: 98px 0 30px;
-  a{
-    display: block;
-      margin: 0 auto;
-      height: 200px;
-      width: 200px;
-      text-align: center;
-    img{
-      width: 50%;
-    margin: 0 auto;
-    }
-  }
-
+.padding0{
+  padding: 0;
 }
-
-
-
+.margin{
+  margin: 0px;
+}
+.width100{
+  width: 100px;
+}
 @import "fancybox-override";
