@@ -123,4 +123,127 @@ a {
 .width100{
   width: 100px;
 }
+
+
+//SagarM CSS Starts HERe
+.padding40{
+  padding: 40px;
+}
+
+.margin40{
+  margin: 40px;
+}
+
+.bg-slider{
+  background: url('../img/header.jpg') center no-repeat;
+      background-size: cover;
+      background-position: center center;
+}
+
+.lt-footer-menu{
+  position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.lt-title{
+  top: 20px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.lt-title-top{
+  color:$brand-info !important;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.lr-data-common{
+  color: $brand-info;
+}
+
+.cont-fl-det{
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.lt-head{
+  //position: absolute;
+  top: 0;
+  text-align: center;
+}
+.lt-logo{
+  top: 50;
+  left: 50;
+}
+.ft-wt800{
+  font-weight: 800;
+}
+
+.posi-abs{
+  position: absolute;
+}
+
+.posi-rel{
+  position: relative;
+}
+
+.bg-mask1{
+  -webkit-text-fill-color: transparent;
+  @include background(linear-gradient(transparent, transparent), url("../img/why-us-bg.jpg") repeat);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bg-mask2{
+  -webkit-text-fill-color: transparent;
+  @include background(linear-gradient(transparent, transparent), url("../img/gal-bg.jpg") repeat);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.lt-num{
+  h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  span{
+    text-transform: uppercase;
+  }
+}
+
+.main-menu{
+  margin-bottom: 20px;
+}
+.lt-footer-menu{
+  .hd-ft-menu{
+    vertical-align: text-bottom;
+  }
+}
+
+.hd-ft-menu{
+  vertical-align: middle;
+  li{
+    a{
+    color: $white;
+    text-decoration: none;
+    &:hover{
+      color: $white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  }
+}
+.lt-mini-logo{
+  margin-bottom: 30px;
+}
+
+
+
+
 @import "fancybox-override";
