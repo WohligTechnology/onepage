@@ -160,9 +160,46 @@ a {
       font-size: 24px;
     }
 }
+.why-us{
+    h1 {
+        font-size: 45px;
+    }
+    h4{
+      font-size: 24px;
+    }
+    ul{
+      li{
+        color: $brand-info;
+      }
+    }
+}
+.gallery{
+  h1 {
+      font-size: 45px;
+      text-transform: capitalize;
+  }
+}
+.about{
+  h1 {
+      font-size: 45px;
+  }
+}
 .event {
     h1 {
         font-size: 45px;
+    }
+    h4{
+      font-size: 24px;
+      color: $brand-info !important;
+    }
+    p{
+      color: $brand-info !important;
+    }
+}
+.contact{
+    h1 {
+        font-size: 45px;
+        text-transform: capitalize;
     }
     h4{
       font-size: 24px;
@@ -239,7 +276,7 @@ a {
 }
 
 .bg-mask2 {
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: top-righttransparent;
     @include background(linear-gradient(transparent, transparent), url("../img/gal-bg.jpg") repeat);
     background-clip: text;
     -webkit-background-clip: text;
@@ -287,8 +324,44 @@ a {
     margin-bottom: 30px;
 }
 
-.lt-corporate{
-  background-color:#DEC988 ;
+
+.lt-box-bg{
+    background-color: #DEC988;
+    //margin: 0px 30% 0px 0px;
+    padding: 3% 3% 3% 12%;
+    text-align: justify;
+}
+
+.form-style{
+  color: $brand-info !important;
+  border-bottom: 1px solid $brand-primary;
+  display: block;
+  i{
+    display: inline;
+  }
+  input{
+    display: inline-block;
+    background: transparent;
+    border: none;
+    box-decoration-break: none;
+    box-shadow: none;
+  }
+}
+.top-right{
+  top:0%;
+  right: 0%;
+  z-index: 0;
+}
+.bottom-left{
+  bottom: 0%;
+  left:0%;
+  z-index: 1;
+}
+.center-img{
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 0.5;
 }
 @import "main2";
 @import "fancybox-override";
