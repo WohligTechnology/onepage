@@ -42,25 +42,31 @@ $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
     -moz-appearance: $value;
     appearance: $value;
 }
+
 img.loading {
     text-align: center;
     opacity: 1;
     width: 32px !important;
     height: auto;
 }
+
 img {
     opacity: 0;
     @include transition(all 300ms ease);
 }
+
 img.doneLoading {
     opacity: 1;
 }
+
 nav li:hover .dropdown-menu {
     display: block;
 }
+
 #map img {
     opacity: 1;
 }
+
 .btn,
 [ui-sref],
 a {
@@ -68,6 +74,7 @@ a {
     @include transition(all ease 300ms);
 }
 //bootstrap forms
+
 .btn,
 .form-control,
 .input-group-lg > .form-control,
@@ -77,6 +84,7 @@ a {
     border-radius: 0;
     @include box-shadow(none);
 }
+
 .form-control:focus {
     border-color: $brand-primary;
     outline: 0;
@@ -87,164 +95,200 @@ a {
 .font-raleway {
     font-family: 'Raleway';
 }
+
 .font-proxi {
     font-family: 'proxima nova';
 }
+
 .font-light {
     font-weight: 300;
 }
+
 .font-bold {
     font-weight: 700;
 }
+
 .color-base {
     color: $brand-info;
 }
+
 .color-primary {
     color-primary: $brand-primary;
 }
+
 .color-white {
     color: $white;
 }
-.lt-list{
-  ul{
-    list-style: none;
-    display: block;
-    li{
-      display: inline-block;
+
+.lt-list {
+    ul {
+        list-style: none;
+        display: block;
+
+        li {
+            display: inline-block;
+        }
     }
-  }
-}
-.padding0{
-  padding: 0;
-}
-.margin{
-  margin: 0px;
-}
-.width100{
-  width: 100px;
 }
 
+.padding0 {
+    padding: 0;
+}
 
+.margin {
+    margin: 0;
+}
+
+.width100 {
+    width: 100px;
+}
 //SagarM CSS Starts HERe
-.padding40{
-  padding: 40px;
+
+.padding40 {
+    padding: 40px;
 }
 
-.margin40{
-  margin: 40px;
+.margin40 {
+    margin: 40px;
 }
 
-.bg-slider{
-  background: url('../img/header.jpg') center no-repeat;
-      background-size: cover;
-      background-position: center center;
+.wedding {
+    h1 {
+        font-size: 45px;
+    }
+    h4{
+      font-size: 24px;
+    }
+}
+.event {
+    h1 {
+        font-size: 45px;
+    }
+    h4{
+      font-size: 24px;
+    }
 }
 
-.lt-footer-menu{
-  position: absolute;
+.bg-slider {
+    background: url('../img/header.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lt-footer-menu {
+    position: absolute;
     bottom: 20px;
     width: 100%;
 }
 
-.lt-title{
-  top: 20px;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%,-50%);
+.lt-title {
+    top: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
 }
 
-.lt-title-top{
-  color:$brand-info !important;
-  text-transform: capitalize;
-  font-weight: 400;
+.lt-title-top {
+    color: $brand-info !important;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
-.lr-data-common{
-  color: $brand-info;
+.lr-data-common {
+    color: $brand-info;
 }
 
-.cont-fl-det{
-  position: absolute;
-  top: 50%;
+.cont-fl-det {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.lt-head{
-  //position: absolute;
-  top: 0;
-  text-align: center;
-}
-.lt-logo{
-  top: 50;
-  left: 50;
-}
-.ft-wt800{
-  font-weight: 800;
+.padd-bt-tp30 {
+    padding: 30px 0;
 }
 
-.posi-abs{
-  position: absolute;
+.lt-head {
+    top: 0;
+    text-align: center;
 }
 
-.posi-rel{
-  position: relative;
+.lt-logo {
+    top: 50;
+    left: 50;
 }
 
-.bg-mask1{
-  -webkit-text-fill-color: transparent;
-  @include background(linear-gradient(transparent, transparent), url("../img/why-us-bg.jpg") repeat);
-  background-clip: text;
-  -webkit-background-clip: text;
+.ft-wt800 {
+    font-weight: 800;
 }
 
-.bg-mask2{
-  -webkit-text-fill-color: transparent;
-  @include background(linear-gradient(transparent, transparent), url("../img/gal-bg.jpg") repeat);
-  background-clip: text;
-  -webkit-background-clip: text;
+.posi-abs {
+    position: absolute;
 }
 
-
-.lt-num{
-  h2{
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-  span{
-    text-transform: uppercase;
-  }
+.posi-rel {
+    position: relative;
 }
 
-.main-menu{
-  margin-bottom: 20px;
-}
-.lt-footer-menu{
-  .hd-ft-menu{
-    vertical-align: text-bottom;
-  }
+.bg-mask1 {
+    -webkit-text-fill-color: transparent;
+    @include background(linear-gradient(transparent, transparent), url("../img/why-us-bg.jpg") repeat);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
-.hd-ft-menu{
-  vertical-align: middle;
-  li{
-    a{
-    color: $white;
-    text-decoration: none;
-    &:hover{
-      color: $white;
-      text-decoration: none;
-      cursor: pointer;
+.bg-mask2 {
+    -webkit-text-fill-color: transparent;
+    @include background(linear-gradient(transparent, transparent), url("../img/gal-bg.jpg") repeat);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.lt-num {
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 0;
     }
-  }
-  }
+
+    span {
+        text-transform: uppercase;
+    }
 }
-.lt-mini-logo{
-  margin-bottom: 30px;
+
+.main-menu {
+    margin-bottom: 20px;
 }
 
+.lt-footer-menu {
+    .hd-ft-menu {
+        vertical-align: text-bottom;
+    }
+}
 
+.hd-ft-menu {
+    vertical-align: middle;
 
+    li {
+        a {
+            color: $white;
+            text-decoration: none;
 
+            &:hover {
+                color: $white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.lt-mini-logo {
+    margin-bottom: 30px;
+}
+
+.lt-corporate{
+  background-color:#DEC988 ;
+}
 @import "main2";
 @import "fancybox-override";
