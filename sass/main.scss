@@ -14,6 +14,7 @@ $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #4f0c03 !default;
 $white: #ffffff !default;
+$brand-gold: #dec988 !default;
 $font-family-sans-serif: "Proxima Nova", "Raleway", sans-serif !default;
 $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -42,7 +43,12 @@ $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
     -moz-appearance: $value;
     appearance: $value;
 }
-
+.full-width{
+  width: 100%
+}
+.full-height{
+  height: 100vh;
+}
 img.loading {
     text-align: center;
     opacity: 1;
@@ -144,65 +150,161 @@ a {
 }
 //SagarM CSS Starts HERe
 
+p{
+  font-size: 15px;
+}
+footer {
+    background-color: $brand-gold;
+    color: $brand-info;
+    height: 60px;
+    a{
+      color: $brand-info;
+      text-decoration: none;
+      &:hover{
+        color: $brand-info;
+        text-decoration: none;
+      }
+    }
+    p{
+      font-size: 12px
+    }
+}
+
 .padding40 {
     padding: 40px;
+}
+
+.padding-tp40 {
+    padding-top: 40px;
 }
 
 .margin40 {
     margin: 40px;
 }
 
+.top50{
+  margin-top: 22px;
+}
+
 .wedding {
     h1 {
-        font-size: 45px;
+        font-size: 100px;
     }
-    h4{
-      font-size: 24px;
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .bg-mask2 {
+        background-position: 180px 0;
     }
 }
-.why-us{
+
+.why-us {
     h1 {
-        font-size: 45px;
+        font-size: 100px;
     }
-    h4{
-      font-size: 24px;
+
+    h4 {
+        font-size: 30px;
     }
-    ul{
-      li{
-        color: $brand-info;
-      }
+
+    ul {
+        li {
+            color: $brand-info;
+        }
+    }
+
+    .bg-mask2 {
+        background-position: 366px 0;
     }
 }
-.gallery{
-  h1 {
-      font-size: 45px;
-      text-transform: capitalize;
-  }
-}
-.about{
-  h1 {
-      font-size: 45px;
-  }
-}
-.event {
+
+.gallery {
     h1 {
-        font-size: 45px;
-    }
-    h4{
-      font-size: 24px;
-      color: $brand-info !important;
-    }
-    p{
-      color: $brand-info !important;
-    }
-}
-.contact{
-    h1 {
-        font-size: 45px;
+        font-size: 100px;
         text-transform: capitalize;
     }
-    h4{
-      font-size: 24px;
+
+    .bg-mask2 {
+        background-position: 490px 0;
+    }
+
+    .posi-center {
+      top: 35%;
+        left: 80%;
+    }
+}
+
+.about {
+    h1 {
+        font-size: 100px;
+    }
+
+    .bg-mask2 {
+        background-position: 490px 0;
+    }
+
+    p {
+        color: $brand-info;
+    }
+
+    img {
+        height: 100vh;
+    }
+
+    .abt-marg {
+        margin-right: 120px;
+    }
+
+    .abt-width {
+        width: 100%;
+    }
+}
+
+.event {
+    h1 {
+        font-size: 100px;
+    }
+
+    h4 {
+        font-size: 30px;
+        color: $brand-info !important;
+    }
+
+    p {
+        color: $brand-info !important;
+    }
+    text-align: justify;
+
+    .lt-eve {
+        top: 180px;
+        width: 50%;
+        left: 270px;
+    }
+
+    .lt-box-bg {
+        z-index: 999;
+    }
+
+    .lt-right-img {
+        z-index: 100;
+        top: 45px;
+    }
+}
+
+.contact {
+    h1 {
+        font-size: 100px;
+        text-transform: capitalize;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .bg-mask2 {
+        background-position: 490px 0;
     }
 }
 
@@ -268,28 +370,42 @@ a {
     position: relative;
 }
 
+.posi-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .bg-mask1 {
     -webkit-text-fill-color: transparent;
-    @include background(linear-gradient(transparent, transparent), url("../img/why-us-bg.jpg") repeat);
+    @include background(linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat);
     background-clip: text;
     -webkit-background-clip: text;
 }
 
 .bg-mask2 {
-    -webkit-text-fill-color: top-righttransparent;
-    @include background(linear-gradient(transparent, transparent), url("../img/gal-bg.jpg") repeat);
+    -webkit-text-fill-color: transparent;
+    @include background(linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat);
     background-clip: text;
     -webkit-background-clip: text;
 }
 
+.lt-count {
+    .list-inline {
+        margin-top: 30px;
+    }
+}
+
 .lt-num {
     h2 {
+        font: 36px;
         margin-top: 20px;
         margin-bottom: 0;
     }
 
     span {
         text-transform: uppercase;
+        line-height: 1;
     }
 }
 
@@ -303,6 +419,24 @@ a {
     }
 }
 
+.lt-dt-pr {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding-left: 16px;
+    }
+
+    li:before {
+        content: "•";
+        padding-right: 8px;
+        color: $brand-gold;
+    }
+}
+
 .hd-ft-menu {
     vertical-align: middle;
 
@@ -310,6 +444,7 @@ a {
         a {
             color: $white;
             text-decoration: none;
+            font-weight: 700;
 
             &:hover {
                 color: $white;
@@ -320,48 +455,223 @@ a {
     }
 }
 
-.lt-mini-logo {
-    margin-bottom: 30px;
-}
-
-
-.lt-box-bg{
+.lt-box-bg {
     background-color: #DEC988;
     //margin: 0px 30% 0px 0px;
-    padding: 3% 3% 3% 12%;
+    padding: 3% 6% 3% 12%;
     text-align: justify;
+    width: 65%;
 }
 
-.form-style{
-  color: $brand-info !important;
-  border-bottom: 1px solid $brand-primary;
-  display: block;
-  i{
-    display: inline;
-  }
-  input{
-    display: inline-block;
-    background: transparent;
-    border: none;
-    box-decoration-break: none;
-    box-shadow: none;
-  }
+.form-style {
+    color: $brand-info !important;
+    margin: 20px;
+
+    span {
+        font-weight: bold;
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    .form-group {
+        border-bottom: 1px solid $brand-primary;
+        display: block;
+    }
+
+    i {
+        display: inline;
+    }
+
+    input {
+      color: $brand-info;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        box-decoration-break: none;
+        box-shadow: none;
+        padding-bottom: 0;
+
+        &::-webkit-input-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &:-moz-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &::-moz-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &:-ms-input-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+    }
 }
-.top-right{
-  top:0%;
-  right: 0%;
-  z-index: 0;
+
+.top-right {
+    top: 0;
+    right: 0;
+    z-index: 0;
 }
-.bottom-left{
-  bottom: 0%;
-  left:0%;
-  z-index: 1;
+
+.bottom-left {
+    top: 88px;
+    right: 280px;
+    z-index: 100;
 }
-.center-img{
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 0.5;
+
+.center-img {
+    top: 165px;
+    right: 80px;
+    z-index: 150;
 }
+
+.div-sizn {
+    min-height: 500px;
+    padding: 20px;
+    margin: 50px 30px;
+}
+
+.img-siz {
+    max-width: 440px;
+    height: auto;
+}
+
+.map-padd {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.lf-video {
+    .vid-img {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-pos {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.horizontal-line {
+    width: 200px;
+    height: 4px;
+}
+
+.vertical-line {
+    height: 200px;
+    width: 4px;
+}
+
+.line-gold {
+    background-color: $brand-gold;
+}
+
+.line-white {
+    background-color: $white;
+}
+//gallery page lines
+
+#hl1 {
+    left: 570px;
+    top: -4px;
+    width: 230px;
+}
+
+#hl2 {
+    top: 381px;
+    left: 40px;
+    width: 225px;
+}
+
+#vl1 {
+    top: -24px;
+    left: 785px;
+    height: 236px;
+}
+
+#vl2 {
+    top: 225px;
+    left: 61px;
+    height: 230px;
+}
+//about page lines
+
+#vl3 {
+    top: 200px;
+    right: 66px;
+    height: 325px;
+}
+//corporate events
+
+#hl3 {
+    top: 20px;
+    left: -140px;
+    width: 130px;
+}
+//other events
+
+#hl4 {
+    top: 27px;
+    left: -270px;
+    width: 260px;
+}
+//wedding
+
+#hl5 {
+    top: 24px;
+    left: 160px;
+    width: 436px;
+}
+
+.sub-btn {
+    border-color: $brand-info;
+    background-color: transparent;
+    color: $brand-info;
+    float: right;
+    width: 110px;
+    font-size: 16px;
+}
+
+.ic-color {
+    color: $brand-gold;
+}
+
+.input-group-addon{
+  background: none;
+  border: none;
+}
+.map {
+height: calc(100vh - 100px);
+}
+// #ic1 {
+//     top: 195px;
+//     left: 80px;
+// }
+//
+// #ic2 {
+//     top: 245px;
+//     left: 80px;
+// }
+//
+// #ic3 {
+//     top: 295px;
+//     left: 80px;
+// }
+//
+// #ic4 {
+//     top: 343px;
+//     left: 80px;
+// }
 @import "main2";
 @import "fancybox-override";
