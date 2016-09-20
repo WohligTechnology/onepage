@@ -20,6 +20,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       seven: "views/section/section7.html",
   };
 
+  $scope.formData = {};
+  $scope.flags = {};
+  $scope.submitForm = function() {
+    $scope.flags.thankyou = false;
+    // console.log("ffff", $scope.formData);
+    NavigationService.submitForm($scope.formData, function(res) {
+      if (res.value) {
+        $scope.flags.thankyou = true;
+        $scope.formData = {};
+      } else {
+
+      }
+    });
+  };
+
   $scope.changePage = function(text) {
     console.log(text);
     var length = $(".fp-section").length;
@@ -80,6 +95,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $.fancybox.close(true);
 })
 
+
+
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
 
   $scope.changeLanguage = function() {
@@ -101,6 +118,4 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   };
 
 
-})
-
-;
+});

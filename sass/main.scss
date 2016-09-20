@@ -324,7 +324,7 @@ footer {
     top: 20px;
     left: 50%;
     text-align: center;
-    transform: translate(-50%,-50%);
+        @include transform(translate(-50%,-50%));
 }
 
 .lt-title-top {
@@ -341,7 +341,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    @include transform(translate(-50%,-50%));
 }
 
 .padd-bt-tp30 {
@@ -373,7 +373,7 @@ footer {
 .posi-center {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+        @include transform(translate(-50%,-50%));
 }
 
 .bg-mask1 {
@@ -559,7 +559,7 @@ footer {
     .img-pos {
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        @include transform(translate(-50%,-50%));
     }
 }
 
@@ -653,6 +653,11 @@ footer {
 }
 .map {
 height: calc(100vh - 100px);
+}
+.thankyou
+{
+  text-align:center;
+  color:#DEC95E;
 }
 // #ic1 {
 //     top: 195px;

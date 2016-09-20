@@ -30,9 +30,8 @@ var jsArray = [
 var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://wohlig.co.in/demo2/";
 
-var ftpString = "U2FsdGVkX19KJ4w0W1pxaUyRsJcjQO5RL98s2rfWnmpoGlaoPfxb8Ibdl0yu5NoHaLfSDmk2WnqRVpQfIAB8wv/Srsy/Y9OUyx5gs3ZutJ2MdGMlS8IaMJmfLSp77xVx1yuRD4aFlRuo0yQ/Ldy2pA==";
-
-var uploadingFolder = "angularframework";
+var ftpString = 'U2FsdGVkX196ZYP1rkTClckyQLedmpsl/ko9MSSjnnB6sAoIm5XtnezagPktqtElNuG0V9afEaoJg5u9lPfWJS0VRlTDCGXpzYKi4mwXcfemj4tj346ay73/WzNux2qk';
+var uploadingFolder = "1899";
 var password = "";
 
 
