@@ -70,7 +70,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       case "host":
         $.fn.fullpage.moveTo(2);
         break;
-      case "header":
+      case "home":
         $.fn.fullpage.moveTo(1);
         break;
       default:
@@ -95,7 +95,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $.fancybox.close(true);
 })
 
+.controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
 
+  $scope.template = TemplateService.changecontent("form");
+  $scope.menutitle = NavigationService.makeactive("Form");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+})
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
 

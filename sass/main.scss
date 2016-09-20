@@ -23,6 +23,11 @@ $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
     src: url("../fonts/ProximaNova-Light.otf");
     font-weight: 300;
 }
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/GOTHAM-BLACK.OTF");
+    font-weight: 300;
+}
 /* mixing*/
 @mixin placeholder {
     $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
@@ -43,12 +48,15 @@ $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
     -moz-appearance: $value;
     appearance: $value;
 }
-.full-width{
-  width: 100%
+
+.full-width {
+    width: 100%;
 }
-.full-height{
-  height: 100vh;
+
+.full-height {
+    height: 100vh;
 }
+
 img.loading {
     text-align: center;
     opacity: 1;
@@ -102,6 +110,10 @@ a {
     font-family: 'Raleway';
 }
 
+.font-gotham {
+    font-family: 'Gotham';
+}
+
 .font-proxi {
     font-family: 'proxima nova';
 }
@@ -141,6 +153,10 @@ a {
     padding: 0;
 }
 
+.padd-bt0 {
+    padding-bottom: 0;
+}
+
 .margin {
     margin: 0;
 }
@@ -150,23 +166,27 @@ a {
 }
 //SagarM CSS Starts HERe
 
-p{
-  font-size: 15px;
+p {
+    font-size: 15px;
 }
+
 footer {
     background-color: $brand-gold;
     color: $brand-info;
     height: 60px;
-    a{
-      color: $brand-info;
-      text-decoration: none;
-      &:hover{
+
+    a {
         color: $brand-info;
         text-decoration: none;
-      }
+
+        &:hover {
+            color: $brand-info;
+            text-decoration: none;
+        }
     }
-    p{
-      font-size: 12px
+
+    p {
+        font-size: 12px;
     }
 }
 
@@ -182,11 +202,15 @@ footer {
     margin: 40px;
 }
 
-.top50{
-  margin-top: 22px;
+.top50 {
+    margin-top: 22px;
 }
 
 .wedding {
+    .lt-right-text {
+        padding: 15px 0;
+    }
+
     h1 {
         font-size: 100px;
     }
@@ -201,6 +225,10 @@ footer {
 }
 
 .why-us {
+    .row {
+        margin: 36px 0;
+    }
+
     h1 {
         font-size: 100px;
     }
@@ -231,8 +259,16 @@ footer {
     }
 
     .posi-center {
-      top: 35%;
+        top: 35%;
         left: 80%;
+    }
+
+    p {
+        background-clip: none;
+        color: $brand-info;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
     }
 }
 
@@ -278,18 +314,19 @@ footer {
     text-align: justify;
 
     .lt-eve {
-        top: 180px;
+        top: 360px;
         width: 50%;
         left: 270px;
     }
 
     .lt-box-bg {
         z-index: 999;
+        top: 155px;
     }
 
     .lt-right-img {
         z-index: 100;
-        top: 45px;
+        top: 170px;
     }
 }
 
@@ -308,23 +345,54 @@ footer {
     }
 }
 
+.scl-col {
+    li {
+        padding: 10px 0 0;
+    }
+
+    i {
+        color: #450A04;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        padding: 6px;
+        text-align: center;
+        background-color: white;
+        opacity: 0.3;
+    }
+}
+
 .bg-slider {
     background: url('../img/header.jpg') center no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.lt-footer-menu {
-    position: absolute;
-    bottom: 20px;
+.lt-header-menu {
+    background-color: #530A03;
     width: 100%;
+
+    .main-menu {
+        text-align: center;
+        margin: 22px 0 0;
+    }
+
+    .lt-mini-logo {
+        padding: 5px 0;
+    }
+
+    ul {
+        margin-top: 10px;
+        padding: 2px 0;
+    }
 }
 
 .lt-title {
     top: 20px;
     left: 50%;
     text-align: center;
-        @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%,-50%));
 }
 
 .lt-title-top {
@@ -335,6 +403,10 @@ footer {
 
 .lr-data-common {
     color: $brand-info;
+
+    p {
+        margin: 0 0 15px;
+    }
 }
 
 .cont-fl-det {
@@ -345,7 +417,11 @@ footer {
 }
 
 .padd-bt-tp30 {
-    padding: 30px 0;
+    padding: 104px 0 0 30px;
+}
+
+.padding-tp55 {
+    padding-top: 55px;
 }
 
 .lt-head {
@@ -373,7 +449,7 @@ footer {
 .posi-center {
     top: 50%;
     left: 50%;
-        @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%,-50%));
 }
 
 .bg-mask1 {
@@ -409,13 +485,31 @@ footer {
     }
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.fp-viewing-0 {
+    .header {
+        position: fixed;
+        top: calc(100% - 0px);
+    }
+}
+
 .main-menu {
     margin-bottom: 20px;
 }
 
-.lt-footer-menu {
+.lt-header-menu {
     .hd-ft-menu {
         vertical-align: text-bottom;
+
+        li {
+            padding-left: 20px;
+        }
     }
 }
 
@@ -458,7 +552,7 @@ footer {
 .lt-box-bg {
     background-color: #DEC988;
     //margin: 0px 30% 0px 0px;
-    padding: 3% 6% 3% 12%;
+    padding: 6% 6% 3% 12%;
     text-align: justify;
     width: 65%;
 }
@@ -485,7 +579,7 @@ footer {
     }
 
     input {
-      color: $brand-info;
+        color: $brand-info;
         display: inline-block;
         background: transparent;
         border: none;
@@ -560,6 +654,14 @@ footer {
         top: 50%;
         left: 50%;
         @include transform(translate(-50%,-50%));
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        top: 70%;
+        font-weight: 600;
     }
 }
 
@@ -647,17 +749,147 @@ footer {
     color: $brand-gold;
 }
 
-.input-group-addon{
-  background: none;
-  border: none;
+.input-group-addon {
+    background: none;
+    border: none;
 }
+
 .map {
-height: calc(100vh - 100px);
+    height: calc(100vh - 140px);
 }
-.thankyou
-{
-  text-align:center;
-  color:#DEC95E;
+
+.thankyou {
+    text-align: center;
+    color: #DEC95E;
+}
+//FORM starts HERe
+
+.padd-tp70 {
+    padding-top: 70px;
+
+    .img-style {
+        padding-left: 0;
+    }
+}
+
+.frm-head {
+    margin: 30px 0;
+
+    h3 {
+        color: $brand-info;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        line-height: 0.5;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: #000000;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.frm-img {
+    img {
+        width: 130px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.frm-occasion {
+    margin: 30px 0;
+
+    .btn-spcn {
+        text-align: center;
+
+        .btn-stylez {
+            border-radius: 5px;
+            background: $brand-info;
+            color: white;
+            text-transform: uppercase;
+            padding: 6px 30px;
+            letter-spacing: 1px;
+            margin: 20px 0;
+        }
+    }
+
+    .form-group {
+        border: 1px solid $brand-info;
+        border-radius: 5px;
+
+        input {
+            border: none;
+            background: transparent;
+            text-decoration: none;
+            color: $brand-info;
+            //placeholder-color change
+            &::-webkit-input-placeholder {
+                color: $brand-info;
+                font-size: 14px;
+            }
+
+            &:-moz-placeholder {
+                color: $brand-info;
+                font-size: 14px;
+            }
+
+            &::-moz-placeholder {
+                color: $brand-info;
+                font-size: 14px;
+            }
+
+            &:-ms-input-placeholder {
+                color: $brand-info;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.frm-cont {
+    margin: 30px 0;
+
+    p {
+        color: $brand-info;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 2px;
+        line-height: 1;
+    }
+
+    .cnt1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+
+.frm-det {
+    margin: 40px;
+
+    p {
+        color: $brand-info;
+        text-align: justify;
+        font-size: 15px;
+    }
+}
+
+.line-info {
+    background-color: $brand-info;
+}
+
+#fhl1 {
+    bottom: -4px;
+    left: 190px;
+    width: 463px;
+}
+
+#fvl1 {
+    bottom: -30px;
+    right: 11px;
 }
 // #ic1 {
 //     top: 195px;

@@ -51,6 +51,12 @@ templateUrl: "views/template.html",
 controller: 'AboutCtrl'
 })
 
+.state('form', {
+url: "/form",
+templateUrl: "views/template.html",
+controller: 'FormCtrl'
+})
+
 .state('contact-us', {
 url: "/contact-us",
 templateUrl: "views/template.html",
