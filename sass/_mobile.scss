@@ -1,0 +1,144 @@
+@media (max-width:1200px) {
+    .padd-tp70 {
+        .img-style {
+            padding: 15px;
+        }
+    }
+
+    .lt-header-menu {
+        .lt-mini-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .event {
+        .lt-eve {
+            top: 360px;
+            width: 50%;
+            left: 200px;
+        }
+
+        .lt-right-img {
+            top: 300px;
+        }
+    }
+
+    .about {
+        .abt-width {
+            padding-left: 30px;
+        }
+
+        .full-height{
+          height: 100%;
+          .img{
+            width: 50%
+            height: 50%;
+          }
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    .contact, .gallery, .wedding, .why-us {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+//
+@media (max-width:$screen-sm-max) {
+    .lt-header-menu {
+        .lt-mini-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+
+    .lf-video{
+      .img-pos {
+    top: 450px;
+  }
+      p{
+        top:520px;
+      }
+    }
+
+    .frm-det {
+        ul {
+            padding: 20px;
+
+            li {
+                line-height: 1;
+                padding: 0;
+            }
+        }
+    }
+
+    .event{
+      .lt-eve {
+    width: 100%;
+    left: 0px;
+    padding: 0 40px;
+  }
+}
+}
+//
+@media (max-width:$screen-xs-max) {
+    .lt-header-menu {
+        .lt-mini-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .frm-det {
+        ul {
+            padding: 20px;
+
+            li {
+                line-height: 1;
+                padding: 0;
+            }
+        }
+    }
+}
+//
+@media (max-width:540px) {
+    .lt-header-menu {
+        .lt-mini-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .frm-det {
+        ul {
+            padding: 20px;
+
+            li {
+                line-height: 1;
+                padding: 2px 0;
+            }
+        }
+    }
+}
+//
+@media (max-width:480px) {
+    .lt-header-menu {
+        .lt-mini-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+//

@@ -1,12 +1,12 @@
 <section class="padd-tp70">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 img-style posi-rel">
-                <div class="horizontal-line line-info posi-abs" id="fhl1"></div>
-                <div class="vertical-line line-info posi-abs" id="fvl1"></div>
-                <img src="img/lt-img.png" alt="18.99" class="img-responsive">
+            <div class="col-md-6 col-sm-6 col-xs-12 img-style posi-rel">
+                <div class="horizontal-line line-info posi-abs hidden-xs  hidden-sm  hidden-md" id="fhl1"></div>
+                <div class="vertical-line line-info posi-abs  hidden-xs  hidden-sm  hidden-md" id="fvl1"></div>
+                <img src="img/lt-img.jpg" alt="18.99" class="img-responsive">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6  col-sm-6 col-xs-12">
                 <div class="frm-head font-gotham">
                     <h3>your occasion,</h3>
                     <h3>our destination.</h3>
@@ -18,7 +18,7 @@
                 <div class="frm-occasion">
                     <form name="contactUsForm" ng-submit="submitForm(formData)" class="form">
                         <div class="lt-form">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
@@ -28,11 +28,11 @@
                                 <div class="form-group">
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
-                                        <input type="number" min="10" max="12" ng-model="formData.phone" name="phone" class="form-control" id="exampleInputEmail3" placeholder="Phone" required>
+                                        <input type="tel" ng-model="formData.phone" name="phone" class="form-control" id="exampleInputEmail3" maxlength="12" placeholder="Phone" required>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6  col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
@@ -43,7 +43,7 @@
                                 <div class="form-group">
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                        <input type="text-box" ng-model="formData.comment" name="occasion" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Occasion" required>
+                                        <input type="text-box" ng-model="formData.comment" name="comment" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Occasion" required>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                                 <button type="submit" class="btn btn-stylez">Submit</button>
                             </div>
                         </div>
-                        <div class="col-md-12 thankyou" ng-show="flags.thankyou">
+                        <div class="col-md-12 thankyou-occa" ng-show="flags.thankyou">
                             <h2>Thank you for getting in touch!</h2>
                         </div>
                     </form>
@@ -64,7 +64,7 @@
         </div>
         <div class="frm-det">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3  col-sm-3 col-xs-12">
                     <ul class="list-unstyled">
                         <li>
                             <p>Centrally Located In Lower Parel</p>
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3 col-xs-12">
                     <ul class="list-unstyled">
                         <li>
                             <p>Acoustically Treated Hall</p>
@@ -90,7 +90,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3 col-xs-12">
                     <ul class="list-unstyled">
                         <li>
                             <p>2 GB Complimentary Wi-Fi (Higher Bandwidth Available)</p>
@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3 col-xs-12">
                     <ul class="list-unstyled">
                         <li>
                             <p>Five High Speed Public Lifts & One Powerful 12 Tonne Service Elevator</p>

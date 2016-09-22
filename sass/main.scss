@@ -643,7 +643,18 @@ footer {
     padding-left: 5px;
 }
 
-.lf-video {
+.full-height{
+  height: 100vh;
+}
+
+// .video{}
+
+.section.section.four {
+  background: url('../img/video-bg.jpg') center no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.lf-video{
     .vid-img {
         opacity: 1;
         width: 100%;
@@ -651,8 +662,9 @@ footer {
     }
 
     .img-pos {
-        top: 50%;
+        top: 260px;
         left: 50%;
+        width: 100px;
         @include transform(translate(-50%,-50%));
     }
 
@@ -660,7 +672,7 @@ footer {
         font-size: 24px;
         text-align: center;
         color: white;
-        top: 70%;
+        top: 340px;
         font-weight: 600;
     }
 }
@@ -762,10 +774,15 @@ footer {
     text-align: center;
     color: #DEC95E;
 }
+.thankyou-occa{
+  text-align: center;
+  color: #4f0c03;
+  padding-bottom:20px;
+}
 //FORM starts HERe
 
 .padd-tp70 {
-    padding-top: 70px;
+    padding-top: 40px;
 
     .img-style {
         padding-left: 0;
@@ -911,4 +928,5 @@ footer {
 //     left: 80px;
 // }
 @import "main2";
+@import "_mobile";
 @import "fancybox-override";
