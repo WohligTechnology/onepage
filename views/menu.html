@@ -1,12 +1,61 @@
-<ul class="nav navbar-nav">
+<!-- <ul class="nav navbar-nav">
   <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
-    <ul class="dropdown-menu" ng-if="menu.subnav!='';">
+    <!-- <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a> -->
+      <!-- <a ng-click="changePage('{{menu.anchor}}')">{{menu.anchor}}</a> -->
+    <!-- <a ng-click="changePage('{{menu.anchor}}')" ng-if="menu.anchor">{{menu.name}}</a> -->
+    <!-- <ul class="dropdown-menu" ng-if="menu.subnav!='';">
       <li ng-repeat="submenu in menu.subnav">
         <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
         <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
       </li>
-    </ul>
+    </ul> -->
+  <!-- </li> -->
+<!-- </ul> --> -->
+<ul class="nav navbar-nav">
+  <li>
+      <a ng-click="changePage('host')">
+what we host
+</a>
+  </li>
+
+  <li>
+      <a ng-click="changePage('whyus')">
+why us
+</a>
+  </li>
+
+  <li>
+      <a ng-click="changePage('gallery')">
+gallery
+</a>
+  </li>
+  <li>
+      <a ng-click="changePage('about')">
+about us
+</a>
+  </li>
+  <li>
+      <a ng-click="changePage('contact')">
+contact us
+</a>
   </li>
 </ul>
+<div class="lt-social float-right">
+    <ul class="list-inline  pull-right scl-col">
+        <li>
+            <a href="https://www.facebook.com/1899-Latitude-Banquets-301695066854785/?fref=ts" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</div>

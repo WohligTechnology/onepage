@@ -1,4 +1,5 @@
 @media (max-width:1200px) {
+
     .padd-tp70 {
         .img-style {
             padding: 15px;
@@ -26,6 +27,7 @@
     }
 
     .about {
+      padding-top: 50px;
         .abt-width {
             padding-left: 30px;
         }
@@ -55,6 +57,23 @@
 }
 //
 @media (max-width:$screen-sm-max) {
+    .navbar {
+        min-height: 50px;
+    }
+
+    .navbar-brand > img {
+        height: 35px;
+    }
+
+    .navbar-nav {
+        display: block;
+        width: 100%;
+
+        .navbar {
+            min-height: 80px;
+        }
+    }
+
     .gallery {
         .galimg-ht {
             height: 40vh;
@@ -135,12 +154,31 @@
 }
 //
 @media (max-width:$screen-xs-max) {
-  .gallery .col-md-8 .full-height {
-    height: 50vh;
-    img{
-      height: 100%;
-    }
+  .navbar-brand {
+    padding: 6px 15px;
+  }
+  .navbar-default{ .navbar-nav {
+     width: 100%;
+     margin: 0px;
 }
+}
+.navbar-collapse{
+  ul.list-inline.pull-right.scl-col {
+ float: none!important;
+ text-align: center;
+  li {
+    margin-top: 0px;
+    padding: 0px 0 0 10px;
+}
+}
+}
+    .gallery .col-md-8 .full-height {
+        height: 50vh;
+
+        img {
+            height: 100%;
+        }
+    }
 
     .lt-header-menu {
         .lt-mini-logo {
@@ -150,43 +188,49 @@
         }
     }
 
-    .cont-fl-det{
-      width: 80%;
+    .cont-fl-det {
+        width: 80%;
     }
 
-    .lt-num{
-      h2{
-        font-size: 20px;
-      }
-      span{
-        font-size: 14px;
-      }
+    .lt-num {
+        h2 {
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 14px;
+        }
     }
 
-
-    .lt-logo{
-      img{
-      height: 150px;
-      width: auto;
-    }
-  }
-    .wedding ,.about ,.why-us ,.contact, .event ,.gallery{
-      h1{
-      font-size: 36px;
-    }
-    h4{
-      font-size: 18px;
-    }
-    p{
-      font-size: 14px;
+    .lt-logo {
+        img {
+            height: 150px;
+            width: auto;
+        }
     }
 
-  }
+    .about,
+    .contact,
+    .event,
+    .gallery,
+    .wedding,
+    .why-us {
+        h1 {
+            font-size: 36px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 
     .padd-bt-tp30 {
-        padding: 45px 0px 0px 0px;
+        padding: 45px 0 0;
     }
-
 
     .frm-det {
         ul {
@@ -198,10 +242,8 @@
             }
         }
     }
-
-
-
-}//
+}
+//
 @media (max-width:540px) {
     .lt-header-menu {
         .lt-mini-logo {
@@ -232,19 +274,195 @@
         }
     }
 
+    .about {
+        .abt-width {
+            padding-left: 0;
+        }
+    }
+
     .padd-bt-tp30 {
-        padding: 5px 0px 0px 0px;
-    }
-    .event{
-      .lt-box-bg{
-        width: 100%;
-      }
-      .lt-eve {
-    top: 451px;
-    left: 0px;
-  }
-
+        padding: 50px 0 0;
     }
 
+    .event {
+        .lt-box-bg {
+            width: 100%;
+        }
+
+        .lt-eve {
+            top: 451px;
+            left: 0;
+        }
+    }
+
+    .gallery .col-md-8 .full-height img {
+        height: auto;
+    }
+
+    .wedding {
+        .lt-right-text {
+            padding: 10px 0;
+        }
+
+        h4 {
+            margin: 0 0 5px;
+        }
+
+        .lr-data-common p {
+            margin: 0 0 10px;
+        }
+    }
+
+    .contact {
+        .cnt-padd {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .mob-marg {
+        margin-top: 40px;
+
+        .padding-tp40 {
+            padding-top: 20px;
+        }
+
+        .map-padd {
+            margin-bottom: 0;
+            padding-left: 5px;
+        }
+    }
+
+    .map {
+        .form-style {
+            margin: 0 5px;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+    }
+
+    .padd-lf0 {
+        padding-right: 0;
+    }
+
+    footer {
+        .top50 {
+            margin-top: 10px;
+
+            .ft-tin {
+                margin-top: 5px;
+            }
+
+            .ft-sma {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+//
+@media (max-width:360px) {
+    .about,
+    .contact,
+    .event,
+    .gallery,
+    .wedding,
+    .why-us {
+        h1 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+        p {
+            font-size: 8px;
+        }
+    }
+
+    .lt-num {
+        h2 {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    .wedding {
+        .wed-mobpad {
+            padding: 5px;
+        }
+    }
+
+    .why-us {
+        ul {
+            padding-left: 20px;
+            line-height: 1;
+
+            li {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .event {
+        .lt-eve {
+            top: 370px;
+        }
+    }
+
+    .contact {
+        input {
+            height: 24px;
+            padding: 0 3px;
+            line-height: 1;
+            font-size: 12px;
+        }
+
+        .form-style {
+            .sub-btn {
+                padding: 3px 6px;
+                line-height: 1;
+                font-size: 12px;
+            }
+
+            textarea {
+                height: 24px;
+            }
+
+            #frm1 {
+                margin: 10px 0;
+            }
+        }
+
+        .map-padd {
+            margin-bottom: 10px;
+        }
+
+        .mob-marg {
+            margin-top: 25px;
+
+            .padding-tp40 {
+                padding-top: 0;
+            }
+        }
+    }
 }
 //

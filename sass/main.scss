@@ -205,8 +205,8 @@ footer {
     margin-top: 22px;
 }
 
-.padd-lf0{
-  padding-left: 0px;
+.padd-lf0 {
+    padding-left: 0;
 }
 
 .wedding {
@@ -335,10 +335,9 @@ footer {
 }
 
 .contact {
-  .cnt-padd{
-    padding:0 30px;
-  }
-
+    .cnt-padd {
+        padding: 0 30px;
+    }
 
     h1 {
         font-size: 100px;
@@ -356,6 +355,7 @@ footer {
 
 .scl-col {
     li {
+        margin-top: 15px;
         padding: 10px 0 0 10px;
     }
 
@@ -378,7 +378,41 @@ footer {
     background-position: center center;
 }
 
-.lt-header-menu {
+.nav{
+  text-align: center;
+}
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-default {
+    background-color: #530A03;
+    border-color: #530A03;
+
+    .navbar-nav {
+      width: 70%;
+      margin-top: 15px;
+   text-align: center;
+   > li {
+     float: none;
+     display: inline-block;
+   }
+        li {
+            a {
+                color: #ffffff;
+                font-weight: 700;
+                &:hover{
+                  color:#ffffff;
+                }
+                &:focus{
+                  color:#ffffff;
+                }
+            }
+        }
+    }
+}
+
+.lt-header-bg {
     background-color: #530A03;
     width: 100%;
 
@@ -426,7 +460,7 @@ footer {
 }
 
 .padd-bt-tp30 {
-    padding: 104px 0 0 0px;
+    padding: 104px 0 0;
 }
 
 .padding-tp55 {
@@ -499,12 +533,17 @@ footer {
     top: 0;
     width: 100%;
     z-index: 9;
+     display: none;
 }
 
-.fp-viewing-0 {
+.fp-viewing-1,
+.fp-viewing-2,
+.fp-viewing-3,
+.fp-viewing-4,
+.fp-viewing-5,
+.fp-viewing-6 {
     .header {
-        position: fixed;
-        top: calc(100% - 0px);
+        display: block;
     }
 }
 
@@ -524,13 +563,15 @@ footer {
 
 .lt-dt-pr {
     ul {
-        list-style-type:disc;
-        li{
-          color: $brand-gold;
-          padding-left: 16px;
-          span{
-            color: $brand-info
-          }
+        list-style-type: disc;
+
+        li {
+            color: $brand-gold;
+            padding-left: 16px;
+
+            span {
+                color: $brand-info;
+            }
         }
     }
 }
@@ -578,10 +619,9 @@ footer {
         display: block;
     }
 
-    #frm1{
-      margin: 30px 0 20px 0;
+    #frm1 {
+        margin: 30px 0 20px;
     }
-
 
     i {
         display: inline;
@@ -688,6 +728,7 @@ footer {
     height: 100vh;
 }
 // .video{}
+
 .section.section.four {
     background: url('../img/video-bg.jpg') center no-repeat;
     background-size: cover;
@@ -814,8 +855,9 @@ footer {
 .map {
     height: calc(100vh - 140px);
 }
+
 .map2 {
-  height: calc(100vh - 180px);
+    height: calc(100vh - 180px);
 }
 
 .thankyou {
@@ -935,17 +977,19 @@ footer {
 
 .frm-det {
     margin: 40px;
-   .mrg-bt20{
-     margin-bottom: 20px;
-   }
-    h3{
-      color: #4f0c03;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    line-height: 0.5;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+
+    .mrg-bt20 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: #4f0c03;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        line-height: 0.5;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
     }
 
     p {
