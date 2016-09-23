@@ -140,7 +140,6 @@ a {
 
 .lt-list {
     ul {
-        list-style: none;
         display: block;
 
         li {
@@ -206,6 +205,10 @@ footer {
     margin-top: 22px;
 }
 
+.padd-lf0{
+  padding-left: 0px;
+}
+
 .wedding {
     .lt-right-text {
         padding: 15px 0;
@@ -259,8 +262,8 @@ footer {
     }
 
     .posi-center {
-        top: 35%;
-        left: 80%;
+        top: 50%;
+        left: 50%;
     }
 
     p {
@@ -287,6 +290,7 @@ footer {
 
     img {
         height: 100vh;
+        overflow: hidden;
     }
 
     .abt-marg {
@@ -331,6 +335,11 @@ footer {
 }
 
 .contact {
+  .cnt-padd{
+    padding:0 30px;
+  }
+
+
     h1 {
         font-size: 100px;
         text-transform: capitalize;
@@ -347,7 +356,7 @@ footer {
 
 .scl-col {
     li {
-        padding: 10px 0 0;
+        padding: 10px 0 0 10px;
     }
 
     i {
@@ -417,7 +426,7 @@ footer {
 }
 
 .padd-bt-tp30 {
-    padding: 104px 0 0 30px;
+    padding: 104px 0 0 0px;
 }
 
 .padding-tp55 {
@@ -515,19 +524,14 @@ footer {
 
 .lt-dt-pr {
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    li {
-        padding-left: 16px;
-    }
-
-    li:before {
-        content: "•";
-        padding-right: 8px;
-        color: $brand-gold;
+        list-style-type:disc;
+        li{
+          color: $brand-gold;
+          padding-left: 16px;
+          span{
+            color: $brand-info
+          }
+        }
     }
 }
 
@@ -574,6 +578,11 @@ footer {
         display: block;
     }
 
+    #frm1{
+      margin: 30px 0 20px 0;
+    }
+
+
     i {
         display: inline;
     }
@@ -586,6 +595,38 @@ footer {
         box-decoration-break: none;
         box-shadow: none;
         padding-bottom: 0;
+
+        &::-webkit-input-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &:-moz-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &::-moz-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+
+        &:-ms-input-placeholder {
+            color: $brand-info;
+            font-size: 14px;
+        }
+    }
+
+    textarea {
+        color: $brand-info;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        box-decoration-break: none;
+        box-shadow: none;
+        padding-bottom: 0;
+        height: 34px;
+        resize: none;
 
         &::-webkit-input-placeholder {
             color: $brand-info;
@@ -643,18 +684,18 @@ footer {
     padding-left: 5px;
 }
 
-.full-height{
-  height: 100vh;
+.full-height {
+    height: 100vh;
 }
-
 // .video{}
-
 .section.section.four {
-  background: url('../img/video-bg.jpg') center no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background: url('../img/video-bg.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
-.lf-video{
+
+.lf-video {
     .vid-img {
         opacity: 1;
         width: 100%;
@@ -662,7 +703,7 @@ footer {
     }
 
     .img-pos {
-        top: 260px;
+        top: 50%;
         left: 50%;
         width: 100px;
         @include transform(translate(-50%,-50%));
@@ -672,7 +713,7 @@ footer {
         font-size: 24px;
         text-align: center;
         color: white;
-        top: 340px;
+        top: 62%;
         font-weight: 600;
     }
 }
@@ -761,6 +802,10 @@ footer {
     color: $brand-gold;
 }
 
+.ic-padd-rt10 {
+    padding: 0 10px 0 5px;
+}
+
 .input-group-addon {
     background: none;
     border: none;
@@ -769,15 +814,19 @@ footer {
 .map {
     height: calc(100vh - 140px);
 }
+.map2 {
+  height: calc(100vh - 180px);
+}
 
 .thankyou {
     text-align: center;
     color: #DEC95E;
 }
-.thankyou-occa{
-  text-align: center;
-  color: #4f0c03;
-  padding-bottom:20px;
+
+.thankyou-occa {
+    text-align: center;
+    color: #4f0c03;
+    padding-bottom: 20px;
 }
 //FORM starts HERe
 
@@ -886,6 +935,18 @@ footer {
 
 .frm-det {
     margin: 40px;
+   .mrg-bt20{
+     margin-bottom: 20px;
+   }
+    h3{
+      color: #4f0c03;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    }
 
     p {
         color: $brand-info;

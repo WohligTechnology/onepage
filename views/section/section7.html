@@ -2,14 +2,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <div class="padding40">
+              <div class="posi-rel map">
+                <!-- <div class="padding40"> -->
+              <div class="posi-abs posi-center full-width cnt-padd">
                     <div class="lt-left-dt bg-mask2">
                         <h1>contact us</h1>
                     </div>
                     <form name="contactUsForm" ng-submit="submitForm(formData)" class="form">
                         <div class="lt-contact-form  form-style">
                             <div class="map-padd">
-                              <span><i class="fa fa-map-marker ic-color"></i>   Kamla mills Compound, Gate No. 4, Lower Parel, Mumbai</span>
+                              <span><i class="fa fa-map-marker ic-color ic-padd-rt10"></i>   Kamla mills Compound, Gate No. 4, Lower Parel, Mumbai</span>
                             </div>
                               <div class="form-group">
                                   <div class="lt-icon input-group">
@@ -29,10 +31,10 @@
                                       <input type="tel" ng-model="formData.phone" name="phone" class="form-control" id="exampleInputEmail3" maxlength="12" placeholder="Phone" required>
                                   </div>
                               </div>
-                              <div class="form-group">
+                              <div class="form-group" id="frm1">
                                   <div class="lt-icon input-group">
                                       <div class="input-group-addon"><i class="fa fa-comment ic-color" id="ic4"></i></div>
-                                      <input type="text-box" ng-model="formData.comment" name="comment" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Comment" required>
+                                      <textarea row="1" ng-model="formData.comment" name="comment" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Comments" required></textarea>
                                   </div>
                               </div>
                               <div>
@@ -44,7 +46,9 @@
                         </div>
                     </form>
                 </div>
+              </div>
             </div>
+          <!-- </div> -->
 
             <div class="col-md-6">
                 <div class="padding-tp40">
