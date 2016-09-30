@@ -355,7 +355,7 @@ footer {
 
 .scl-col {
     li {
-        margin-top: 15px;
+        margin-top: 0px;
         padding: 10px 0 0 10px;
     }
 
@@ -432,10 +432,13 @@ footer {
 }
 
 .lt-title {
-    top: 20px;
-    left: 50%;
+     top: 0;
+     right: 0;
     text-align: center;
-    @include transform(translate(-50%,-50%));
+    // @include transform(translate(-50%,-50%));
+    .title-pad{
+      padding: 20px;
+    }
 }
 
 .lt-title-top {
@@ -1012,6 +1015,29 @@ footer {
 #fvl1 {
     bottom: -30px;
     right: 11px;
+}
+
+.menu-list{
+  bottom: 15px;
+  left: 0;
+}
+.nav-list{
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize;
+    li{
+      padding-left: 30px;
+      a{
+        font-size: 20px;
+        // font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+          color: #fff;
+          text-decoration: none;
+      }
+    }
+  }
 }
 // #ic1 {
 //     top: 195px;
