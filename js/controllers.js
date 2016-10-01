@@ -21,11 +21,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   };
 
   $scope.formData = {};
+  // $scope.formData.email = "sagar.wohlig@gmail.com";
+
   $scope.flags = {};
   $scope.submitForm = function() {
     $scope.flags.thankyou = false;
-    //console.log("ffff", $scope.formData);
-    $scope.formData.subject = "Contact Us form details";
+      //console.log("ffff", $scope.formData);
+    $scope.formData.subject = "Contact Us Form Details";
     NavigationService.submitForm($scope.formData, function(res) {
       if (res.value) {
         $scope.flags.thankyou = true;
@@ -108,7 +110,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.flags = {};
   $scope.submitForm = function() {
     $scope.flags.thankyou = false;
-    $scope.formData.subject = "Occasion form details";
+    $scope.formData.subject = "Landing Page Inquiry Details";
     //console.log("ffff", $scope.formData);
     NavigationService.submitForm($scope.formData, function(res) {
       if (res.value) {

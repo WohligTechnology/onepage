@@ -137,7 +137,13 @@ a {
 .color-white {
     color: $white;
 }
-
+.min-m{
+  -webkit-text-fill-color: transparent;
+background: -webkit-linear-gradient(transparent, transparent), url(../img/mask.jpg) repeat;
+background: linear-gradient(transparent, transparent), url(../img/mask.jpg) repeat;
+background-clip: text;
+-webkit-background-clip: text;
+}
 .lt-list {
     ul {
         display: block;
@@ -167,6 +173,10 @@ a {
 
 p {
     font-size: 15px;
+}
+
+.marg-bt5{
+  margin-bottom: 5px;
 }
 
 footer {

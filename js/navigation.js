@@ -52,8 +52,9 @@ var navigationservice = angular.module('navigationservice', [])
     },
 
     submitForm: function(mydata, callback) {
+      //console.log("mydata",mydata);
       $http({
-        url: 'http://ting.in/1899/mail.php?name='+mydata.name+'&email='+mydata.email+'&phone='+mydata.phone+'&comment='+mydata.comment+'&subject='+mydata.subject,
+        url: 'http://ting.in/1899latitude.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&phone='+mydata.phone+'&comment='+mydata.comment+'&subject='+mydata.subject,
         method: 'GET',
         withCredentials: true,
         data: mydata
