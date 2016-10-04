@@ -6,97 +6,98 @@ var firstapp = angular.module('firstapp', [
   'navigationservice',
   'pascalprecht.translate',
   'angulartics',
-  'angulartics.google.analytics'
+  'angulartics.google.analytics',
+  'angulartics.facebook.pixel'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
   // for http request with session
   $httpProvider.defaults.withCredentials = true;
   $stateProvider
     .state('home', {
-    url: "/",
+      url: "/",
+      templateUrl: "views/template.html",
+      controller: 'HomeCtrl'
+    })
+    .state('why-us', {
+      url: "/why-us",
+      templateUrl: "views/template.html",
+      controller: 'WhyUsCtrl'
+    })
+    .state('what-do', {
+      url: "/what-do",
+      templateUrl: "views/template.html",
+      controller: ' WhatDoCtrl'
+    })
+
+  .state('clients', {
+    url: "/clients",
     templateUrl: "views/template.html",
-    controller: 'HomeCtrl'
+    controller: 'ClientsCtrl'
   })
-  .state('why-us', {
-  url: "/why-us",
-  templateUrl: "views/template.html",
-  controller: 'WhyUsCtrl'
-})
-  .state('what-do', {
-  url: "/what-do",
-  templateUrl: "views/template.html",
-  controller: ' WhatDoCtrl'
-})
 
-.state('clients', {
-url: "/clients",
-templateUrl: "views/template.html",
-controller: 'ClientsCtrl'
-})
+  .state('careers', {
+      url: "/careers",
+      templateUrl: "views/template.html",
+      controller: 'CareersCtrl'
+    })
+    .state('press-media', {
+      url: "/press-media",
+      templateUrl: "views/template.html",
+      controller: 'PressCtrl'
+    })
+    .state('about', {
+      url: "/about",
+      templateUrl: "views/template.html",
+      controller: 'AboutCtrl'
+    })
 
-.state('careers', {
-url: "/careers",
-templateUrl: "views/template.html",
-controller: 'CareersCtrl'
-})
-.state('press-media', {
-url: "/press-media",
-templateUrl: "views/template.html",
-controller: 'PressCtrl'
-})
-.state('about', {
-url: "/about",
-templateUrl: "views/template.html",
-controller: 'AboutCtrl'
-})
+  .state('form', {
+      url: "/form",
+      templateUrl: "views/template.html",
+      controller: 'FormCtrl'
+    })
+    .state('thankyou', {
+      url: "/thankyou",
+      templateUrl: "views/template.html",
+      controller: 'ThanksCtrl'
+    })
 
-.state('form', {
-url: "/form",
-templateUrl: "views/template.html",
-controller: 'FormCtrl'
-})
-.state('thankyou', {
-url: "/thankyou",
-templateUrl: "views/template.html",
-controller: 'ThanksCtrl'
-})
-
-.state('contact-us', {
-url: "/contact-us",
-templateUrl: "views/template.html",
-controller: 'ContactCtrl'
-});
+  .state('contact-us', {
+    url: "/contact-us",
+    templateUrl: "views/template.html",
+    controller: 'ContactCtrl'
+  });
 
 
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);
 });
 
-firstapp.directive('autoHeight', function($compile, $parse) {
+firstapp.directive('autoHeight', function ($compile, $parse) {
   return {
     restrict: 'EA',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       var windowHeight = $(window).height();
-      var addHeight = function() {
+      var addHeight = function () {
         $element.css("min-height", windowHeight);
       };
       addHeight();
     }
   };
 });
-firstapp.directive('img', function($compile, $parse) {
+firstapp.directive('img', function ($compile, $parse) {
   return {
     restrict: 'E',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       if (!attrs.noloading) {
         $element.after("<img src='img/loading.gif' class='loading' />");
         var $loading = $element.next(".loading");
-        $element.load(function() {
+        $element.load(function () {
           $loading.remove();
           $(this).addClass("doneLoading");
         });
@@ -107,29 +108,29 @@ firstapp.directive('img', function($compile, $parse) {
   };
 });
 
-firstapp.directive('fancyboxBox', function($document) {
-    return {
-        restrict: 'EA',
-        replace: false,
-        link: function(scope, element, attr) {
-            var $element = $(element);
-            var target;
-            if (attr.rel) {
-               target = $("[rel='" + attr.rel + "']");
-            } else {
-                target = element;
-            }
+firstapp.directive('fancyboxBox', function ($document) {
+  return {
+    restrict: 'EA',
+    replace: false,
+    link: function (scope, element, attr) {
+      var $element = $(element);
+      var target;
+      if (attr.rel) {
+        target = $("[rel='" + attr.rel + "']");
+      } else {
+        target = element;
+      }
 
-            target.fancybox({
-                openEffect: 'fade',
-                closeEffect: 'fade',
-                closeBtn: true,
-                helpers: {
-                    media: {}
-                }
-            });
+      target.fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        helpers: {
+          media: {}
         }
-    };
+      });
+    }
+  };
 });
 
 

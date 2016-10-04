@@ -48,5 +48,7 @@ Temporary Items
 node_modules
 bower_components
 
-
-
+*.zip
+production
+w
+css

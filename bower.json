@@ -1,5 +1,5 @@
 {
-  "name": "AngularFrameworkFrontend",
+  "name": "name",
   "description": "AngularFrameworkFrontend",
   "main": "gulpfile.js",
   "authors": [
@@ -32,7 +32,9 @@
     "fancyBox": "fancybox#^2.1.5",
     "angulartics-google-analytics": "^0.1.4",
     "angular-swiper": "^0.4.0",
-    "smart-app-banner": "https://github.com/kudago/smart-app-banner.git"
+    "smart-app-banner": "https://github.com/kudago/smart-app-banner.git",
+    "angulartics-facebook-pixel": "^0.2.0",
+    "fullpage.js": "^2.8.6"
   },
   "devDependencies": {
     "angular-translate": "^2.11.0"

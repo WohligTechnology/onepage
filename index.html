@@ -32,6 +32,7 @@
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angulartics/dist/angulartics.min.js"></script>
     <script src="bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
+    <script src="bower_components/angulartics-facebook-pixel/dist/angulartics-facebook-pixel.min.js"></script>
     <script src="bower_components/angular-swiper/dist/angular-swiper.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 
@@ -42,28 +43,7 @@
     <script src="js/templateservice.js"></script>
 
     <!-- Google Code for smash search Conversion Page -->
-    <script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 959686036;
-    var google_conversion_language = "en";
-    var google_conversion_format = "3";
-    var google_conversion_color = "ffffff";
-    var google_conversion_label = "z1QhCMOs4F4QlMvOyQM";
-    var google_remarketing_only = false;
-    /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '293006011064784');
-    fbq('track', "PageView");</script>
+    <script type=”text/javascript” src=”//www.googleadservices.com/pagead/conversion_async.js " charset=”utf-8"></script>
 
     <!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -88,6 +68,14 @@
         ga('create', 'UA-77872125-3', {
             'cookieDomain': 'none'
         });
+    </script>
+    <script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+              document,'script','//connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '293006011064784');
     </script>
 </body>
 
