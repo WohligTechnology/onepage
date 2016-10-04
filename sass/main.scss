@@ -875,7 +875,7 @@ footer {
 
 .thankyou {
     text-align: center;
-    color: #DEC95E;
+    color: #4f0c03;
 }
 
 .thankyou-occa {
@@ -1048,6 +1048,23 @@ footer {
       }
     }
   }
+}
+
+.thankyou-pg{
+  padding: 100px 0;
+  height: calc(100vh - 60px);
+  .navbar-default .navbar-nav {
+    display: none;
+  }
+}
+
+.gt-btn {
+    border-color: $brand-info;
+    background-color: transparent;
+    color: $brand-info;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 // #ic1 {
 //     top: 195px;

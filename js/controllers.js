@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper'])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout,$stateParams) {
+.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout,$state,$stateParams) {
   //Used to name the .html file
 
   console.log("Testing Consoles");
@@ -30,8 +30,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.formData.subject = "Contact Us Form Details";
     NavigationService.submitForm($scope.formData, function(res) {
       if (res.value) {
-        $scope.flags.thankyou = true;
-        $scope.formData = {};
+        // $scope.flags.thankyou = true;
+        // $scope.formData = {};
+        $state.go('thankyou');
       } else {
 
       }
@@ -90,15 +91,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   });
 })
 
-.controller('headerctrl', function($scope, TemplateService) {
-  $scope.template = TemplateService;
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    $(window).scrollTop(0);
-  });
-  $.fancybox.close(true);
-})
+.controller('ThanksCtrl', function($scope, TemplateService, NavigationService, $timeout) {
 
-.controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("thankyou");
+    $scope.menutitle = NavigationService.makeactive("Thank You");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+  })
+
+
+.controller('FormCtrl', function($scope, TemplateService, NavigationService,$state,$timeout) {
 
   $scope.template = TemplateService.changecontent("form");
   $scope.menutitle = NavigationService.makeactive("Form");
@@ -114,8 +117,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //console.log("ffff", $scope.formData);
     NavigationService.submitForm($scope.formData, function(res) {
       if (res.value) {
-        $scope.flags.thankyou = true;
-        $scope.formData = {};
+        // $scope.flags.thankyou = true;
+        // $scope.formData = {};
+        $state.go('thankyou');
       } else {
 
       }
@@ -123,6 +127,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   };
 
 })
+.controller('headerctrl', function($scope, TemplateService) {
+  $scope.template = TemplateService;
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    $(window).scrollTop(0);
+  });
+  $.fancybox.close(true);
+})
+
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
 
