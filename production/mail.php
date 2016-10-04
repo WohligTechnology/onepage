@@ -7,7 +7,7 @@ header('Access-Control-Allow-Credentials: true');
 header("Access-Control-Allow-Origin: $http_origin");
 header('Access-Control-Max-Age: 86400');
 header('Content-Type: application/json');
-$to = "avanti.atre@smaaash.in,mukta.fernandes@smaaash.in,aadil@ting.in,rajiv@tingmail.in,vamsi@tingmail.in,arjun.garewal@smaaash.in, nilesh.jadhav@smaaash.in,bhupender.singh@smaaash.in";
+$to = "avanti.atre@smaaash.in,mukta.fernandes@smaaash.in,aadil@ting.in,rajiv@tingmail.in,vamsi@tingmail.in,arjun.garewal@smaaash.in, nilesh.jadhav@smaaash.in,bhupender.singh@smaaash.in,vipin@tingmail.in";
 $name = $_GET['name'];
 $email = $_GET['email'];
 $phone = $_GET['phone'];
