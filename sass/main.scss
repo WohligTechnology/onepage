@@ -137,13 +137,15 @@ a {
 .color-white {
     color: $white;
 }
-.min-m{
-  -webkit-text-fill-color: transparent;
-background: -webkit-linear-gradient(transparent, transparent), url(../img/mask.jpg) repeat;
-background: linear-gradient(transparent, transparent), url(../img/mask.jpg) repeat;
-background-clip: text;
--webkit-background-clip: text;
+
+.min-m {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat;
+    background: linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
+
 .lt-list {
     ul {
         display: block;
@@ -171,12 +173,46 @@ background-clip: text;
 }
 //SagarM CSS Starts HERe
 
+.disp-blk {
+    display: block;
+}
+
+.disp-inline {
+    display: inline;
+}
+
+.disp-inblk {
+    display: inline-block;
+}
+
+.head-lt {
+    h1 {
+        font-size: 48px;
+        background-position: -215px 0;
+        padding-right: 10px;
+        margin-top: 0;
+    }
+    // border-right: ;
+}
+
+.head-rt {
+    border-left: 2px solid #e6d676;
+
+    p {
+        padding-left: 10px;
+        font-weight: 700;
+        text-align: left;
+        background-position: 130px;
+        margin-bottom: 0;
+    }
+}
+
 p {
     font-size: 15px;
 }
 
-.marg-bt5{
-  margin-bottom: 5px;
+.marg-bt5 {
+    margin-bottom: 5px;
 }
 
 footer {
@@ -296,6 +332,7 @@ footer {
 
     p {
         color: $brand-info;
+        margin-right: 10px;
     }
 
     img {
@@ -365,7 +402,7 @@ footer {
 
 .scl-col {
     li {
-        margin-top: 0px;
+        margin-top: 0;
         padding: 10px 0 0 10px;
     }
 
@@ -383,14 +420,15 @@ footer {
 }
 
 .bg-slider {
-    background: url('../img/header.jpg') center no-repeat;
+    background: url('../img/head-banner.png') center no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.nav{
-  text-align: center;
+.nav {
+    text-align: center;
 }
+
 .navbar {
     min-height: 80px;
 }
@@ -400,22 +438,26 @@ footer {
     border-color: #530A03;
 
     .navbar-nav {
-      width: 70%;
-      margin-top: 15px;
-   text-align: center;
-   > li {
-     float: none;
-     display: inline-block;
-   }
+        width: 70%;
+        margin-top: 15px;
+        text-align: center;
+
+        > li {
+            float: none;
+            display: inline-block;
+        }
+
         li {
             a {
                 color: #ffffff;
                 font-weight: 700;
-                &:hover{
-                  color:#ffffff;
+
+                &:hover {
+                    color: #ffffff;
                 }
-                &:focus{
-                  color:#ffffff;
+
+                &:focus {
+                    color: #ffffff;
                 }
             }
         }
@@ -442,12 +484,12 @@ footer {
 }
 
 .lt-title {
-     top: 0;
-     right: 0;
+    top: 0;
+    right: 0;
     text-align: center;
     // @include transform(translate(-50%,-50%));
-    .title-pad{
-      padding: 20px;
+    .title-pad {
+        padding: 20px;
     }
 }
 
@@ -488,6 +530,10 @@ footer {
 .lt-logo {
     top: 50;
     left: 50;
+
+    img {
+        height: 160px;
+    }
 }
 
 .ft-wt800 {
@@ -524,7 +570,7 @@ footer {
 
 .lt-count {
     .list-inline {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -546,7 +592,7 @@ footer {
     top: 0;
     width: 100%;
     z-index: 9;
-     display: none;
+    display: none;
 }
 
 .fp-viewing-1,
@@ -1027,35 +1073,40 @@ footer {
     right: 11px;
 }
 
-.menu-list{
-  bottom: 15px;
-  left: 0;
-}
-.nav-list{
-  text-align: left;
-  color: #fff;
-  text-transform: capitalize;
-    li{
-      padding-left: 30px;
-      a{
-        font-size: 20px;
-        // font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        &:hover{
-          color: #fff;
-          text-decoration: none;
-      }
-    }
-  }
+.menu-list {
+    bottom: 15px;
+    left: 0;
 }
 
-.thankyou-pg{
-  padding: 100px 0;
-  height: calc(100vh - 60px);
-  .navbar-default .navbar-nav {
-    display: none;
-  }
+.nav-list {
+    text-align: left;
+    color: #fff;
+    text-transform: capitalize;
+
+    li {
+        padding-left: 30px;
+
+        a {
+            font-size: 20px;
+            // font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.thankyou-pg {
+    padding: 100px 0;
+    height: calc(100vh - 60px);
+
+    .navbar-default .navbar-nav {
+        display: none;
+    }
 }
 
 .gt-btn {
