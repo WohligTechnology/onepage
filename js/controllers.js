@@ -38,42 +38,42 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       }
     });
   };
-//gallery images
-$scope.galleryImages=[{
-  "image":"img/gallery/1.jpg"
-},{
-  "image":"img/gallery/2.jpg"
-},{
-  "image":"img/gallery/3.jpg"
-},{
-  "image":"img/gallery/4.jpg"
-},{
-  "image":"img/gallery/5.jpg"
-},{
-  "image":"img/gallery/6.jpg"
-},{
-  "image":"img/gallery/7.jpg"
-},{
-  "image":"img/gallery/8.jpg"
-},{
-  "image":"img/gallery/9.jpg"
-},{
-  "image":"img/gallery/10.jpg"
-},{
-  "image":"img/gallery/11.jpg"
-},{
-  "image":"img/gallery/12.jpg"
-},{
-  "image":"img/gallery/13.jpg"
-},{
-  "image":"img/gallery/14.jpg"
-},{
-  "image":"img/gallery/15.jpg"
-},{
-  "image":"img/gallery/16.jpg"
-}];
-console.log($scope.galleryImages);
-// gallery images end?\
+  //gallery images
+  $scope.galleryImages = [{
+    "image": "img/gallery/1.jpg"
+  }, {
+    "image": "img/gallery/2.jpg"
+  }, {
+    "image": "img/gallery/3.jpg"
+  }, {
+    "image": "img/gallery/4.jpg"
+  }, {
+    "image": "img/gallery/5.jpg"
+  }, {
+    "image": "img/gallery/6.jpg"
+  }, {
+    "image": "img/gallery/7.jpg"
+  }, {
+    "image": "img/gallery/8.jpg"
+  }, {
+    "image": "img/gallery/9.jpg"
+  }, {
+    "image": "img/gallery/10.jpg"
+  }, {
+    "image": "img/gallery/11.jpg"
+  }, {
+    "image": "img/gallery/12.jpg"
+  }, {
+    "image": "img/gallery/13.jpg"
+  }, {
+    "image": "img/gallery/14.jpg"
+  }, {
+    "image": "img/gallery/15.jpg"
+  }, {
+    "image": "img/gallery/16.jpg"
+  }];
+  console.log($scope.galleryImages);
+  // gallery images end?\
   $scope.changePage = function (text) {
     console.log(text);
     var length = $(".fp-section").length;
@@ -157,6 +157,9 @@ console.log($scope.galleryImages);
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "";
 
+    if (typeof $.fn.fullpage.destroy == 'function') {
+      $.fn.fullpage.destroy('all');
+    }
     $scope.formData = {};
     $scope.flags = {};
     $scope.submitForm = function () {

@@ -7,7 +7,9 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
+
 /* Bootstrap Variables Goes Here */
+
 $brand-primary: #dfc988 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
@@ -15,20 +17,29 @@ $brand-danger: #fc483f !default;
 $brand-info: #4f0c03 !default;
 $white: #ffffff !default;
 $brand-gold: #dec988 !default;
-$font-family-sans-serif: "Proxima Nova", "Raleway", sans-serif !default;
-$font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
+$font-family-sans-serif: "Proxima Nova",
+"Raleway",
+sans-serif !default;
+$font-family-serif: "Proxima Nova",
+"Raleway",
+Times,
+serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @font-face {
     font-family: "Proxima Nova";
     src: url("../fonts/ProximaNova-Light.otf");
     font-weight: 300;
 }
+
 @font-face {
     font-family: "Gotham";
     src: url("../fonts/GOTHAM-BLACK.OTF");
     font-weight: 300;
 }
+
+
 /* mixing*/
+
 @mixin placeholder {
     $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
     @each $placeholder in $placeholders {
@@ -37,12 +48,14 @@ $font-family-serif: "Proxima Nova", "Raleway", Times, serif !default;
         }
     }
 }
+
 @mixin transition($transition...) {
     -moz-transition: $transition;
     -o-transition: $transition;
     -webkit-transition: $transition;
     transition: $transition;
 }
+
 @mixin x-appearance ($value) {
     -webkit-appearance: $value;
     -moz-appearance: $value;
@@ -87,13 +100,13 @@ a {
     cursor: pointer;
     @include transition(all ease 300ms);
 }
-//bootstrap forms
 
+//bootstrap forms
 .btn,
 .form-control,
-.input-group-lg > .form-control,
-.input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn,
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn,
 .input-lg {
     border-radius: 0;
     @include box-shadow(none);
@@ -104,8 +117,11 @@ a {
     outline: 0;
     @include box-shadow(none);
 }
+
 //bootstrap forms
+
 /* Start writing sass here */
+
 .font-raleway {
     font-family: 'Raleway';
 }
@@ -149,7 +165,6 @@ a {
 .lt-list {
     ul {
         display: block;
-
         li {
             display: inline-block;
         }
@@ -171,8 +186,8 @@ a {
 .width100 {
     width: 100px;
 }
-//SagarM CSS Starts HERe
 
+//SagarM CSS Starts HERe
 .disp-blk {
     display: block;
 }
@@ -197,7 +212,6 @@ a {
 
 .head-rt {
     border-left: 2px solid #e6d676;
-
     p {
         padding-left: 10px;
         font-weight: 700;
@@ -219,17 +233,14 @@ footer {
     background-color: $brand-gold;
     color: $brand-info;
     height: 60px;
-
     a {
         color: $brand-info;
         text-decoration: none;
-
         &:hover {
             color: $brand-info;
             text-decoration: none;
         }
     }
-
     p {
         font-size: 12px;
     }
@@ -259,15 +270,12 @@ footer {
     .lt-right-text {
         padding: 15px 0;
     }
-
     h1 {
         font-size: 100px;
     }
-
     h4 {
         font-size: 30px;
     }
-
     .bg-mask2 {
         background-position: 180px 0;
     }
@@ -277,21 +285,17 @@ footer {
     .row {
         margin: 36px 0;
     }
-
     h1 {
         font-size: 100px;
     }
-
     h4 {
         font-size: 30px;
     }
-
     ul {
         li {
             color: $brand-info;
         }
     }
-
     .bg-mask2 {
         background-position: 366px 0;
     }
@@ -302,16 +306,13 @@ footer {
         font-size: 100px;
         text-transform: capitalize;
     }
-
     .bg-mask2 {
         background-position: 490px 0;
     }
-
     .posi-center {
         top: 50%;
         left: 50%;
     }
-
     p {
         background-clip: none;
         color: $brand-info;
@@ -325,25 +326,20 @@ footer {
     h1 {
         font-size: 100px;
     }
-
     .bg-mask2 {
         background-position: 490px 0;
     }
-
     p {
         color: $brand-info;
         margin-right: 10px;
     }
-
     img {
         height: 100vh;
         overflow: hidden;
     }
-
     .abt-marg {
         margin-right: 120px;
     }
-
     .abt-width {
         width: 100%;
     }
@@ -353,28 +349,23 @@ footer {
     h1 {
         font-size: 100px;
     }
-
     h4 {
         font-size: 30px;
         color: $brand-info !important;
     }
-
     p {
         color: $brand-info !important;
     }
     text-align: justify;
-
     .lt-eve {
         top: 360px;
         width: 50%;
         left: 270px;
     }
-
     .lt-box-bg {
         z-index: 999;
         top: 155px;
     }
-
     .lt-right-img {
         z-index: 100;
         top: 170px;
@@ -385,16 +376,13 @@ footer {
     .cnt-padd {
         padding: 0 30px;
     }
-
     h1 {
         font-size: 100px;
         text-transform: capitalize;
     }
-
     h4 {
         font-size: 30px;
     }
-
     .bg-mask2 {
         background-position: 490px 0;
     }
@@ -405,7 +393,6 @@ footer {
         margin-top: 0;
         padding: 10px 0 0 10px;
     }
-
     i {
         color: #450A04;
         border: 1px solid white;
@@ -436,26 +423,21 @@ footer {
 .navbar-default {
     background-color: #530A03;
     border-color: #530A03;
-
     .navbar-nav {
         width: 70%;
         margin-top: 15px;
         text-align: center;
-
-        > li {
+        >li {
             float: none;
             display: inline-block;
         }
-
         li {
             a {
                 color: #ffffff;
                 font-weight: 700;
-
                 &:hover {
                     color: #ffffff;
                 }
-
                 &:focus {
                     color: #ffffff;
                 }
@@ -467,16 +449,13 @@ footer {
 .lt-header-bg {
     background-color: #530A03;
     width: 100%;
-
     .main-menu {
         text-align: center;
         margin: 22px 0 0;
     }
-
     .lt-mini-logo {
         padding: 5px 0;
     }
-
     ul {
         margin-top: 10px;
         padding: 2px 0;
@@ -501,7 +480,6 @@ footer {
 
 .lr-data-common {
     color: $brand-info;
-
     p {
         margin: 0 0 15px;
     }
@@ -511,7 +489,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%,
+    -50%));
 }
 
 .padd-bt-tp30 {
@@ -530,7 +509,6 @@ footer {
 .lt-logo {
     top: 50;
     left: 50;
-
     img {
         height: 160px;
     }
@@ -551,19 +529,24 @@ footer {
 .posi-center {
     top: 50%;
     left: 50%;
-    @include transform(translate(-50%,-50%));
+    @include transform(translate(-50%,
+    -50%));
 }
 
 .bg-mask1 {
     -webkit-text-fill-color: transparent;
-    @include background(linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat);
+    @include background(linear-gradient(transparent,
+    transparent),
+    url("../img/mask.jpg") repeat);
     background-clip: text;
     -webkit-background-clip: text;
 }
 
 .bg-mask2 {
     -webkit-text-fill-color: transparent;
-    @include background(linear-gradient(transparent, transparent), url("../img/mask.jpg") repeat);
+    @include background(linear-gradient(transparent,
+    transparent),
+    url("../img/mask.jpg") repeat);
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -580,7 +563,6 @@ footer {
         margin-top: 20px;
         margin-bottom: 0;
     }
-
     span {
         text-transform: uppercase;
         line-height: 1;
@@ -600,7 +582,8 @@ footer {
 .fp-viewing-3,
 .fp-viewing-4,
 .fp-viewing-5,
-.fp-viewing-6 {
+.fp-viewing-6,
+.fp-viewing-7 {
     .header {
         display: block;
     }
@@ -613,7 +596,6 @@ footer {
 .lt-header-menu {
     .hd-ft-menu {
         vertical-align: text-bottom;
-
         li {
             padding-left: 20px;
         }
@@ -623,11 +605,9 @@ footer {
 .lt-dt-pr {
     ul {
         list-style-type: disc;
-
         li {
             color: $brand-gold;
             padding-left: 16px;
-
             span {
                 color: $brand-info;
             }
@@ -637,13 +617,11 @@ footer {
 
 .hd-ft-menu {
     vertical-align: middle;
-
     li {
         a {
             color: $white;
             text-decoration: none;
             font-weight: 700;
-
             &:hover {
                 color: $white;
                 text-decoration: none;
@@ -664,28 +642,22 @@ footer {
 .form-style {
     color: $brand-info !important;
     margin: 20px;
-
     span {
         font-weight: bold;
-
         i {
             font-size: 24px;
         }
     }
-
     .form-group {
         border-bottom: 1px solid $brand-primary;
         display: block;
     }
-
     #frm1 {
         margin: 30px 0 20px;
     }
-
     i {
         display: inline;
     }
-
     input {
         color: $brand-info;
         display: inline-block;
@@ -694,28 +666,23 @@ footer {
         box-decoration-break: none;
         box-shadow: none;
         padding-bottom: 0;
-
         &::-webkit-input-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &:-moz-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &::-moz-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &:-ms-input-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
     }
-
     textarea {
         color: $brand-info;
         display: inline-block;
@@ -726,22 +693,18 @@ footer {
         padding-bottom: 0;
         height: 34px;
         resize: none;
-
         &::-webkit-input-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &:-moz-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &::-moz-placeholder {
             color: $brand-info;
             font-size: 14px;
         }
-
         &:-ms-input-placeholder {
             color: $brand-info;
             font-size: 14px;
@@ -786,8 +749,8 @@ footer {
 .full-height {
     height: 100vh;
 }
-// .video{}
 
+// .video{}
 .section.section.four {
     background: url('../img/video-bg.jpg') center no-repeat;
     background-size: cover;
@@ -801,14 +764,13 @@ footer {
         width: 100%;
         height: auto;
     }
-
     .img-pos {
         top: 50%;
         left: 50%;
         width: 100px;
-        @include transform(translate(-50%,-50%));
+        @include transform(translate(-50%,
+        -50%));
     }
-
     p {
         font-size: 24px;
         text-align: center;
@@ -835,8 +797,8 @@ footer {
 .line-white {
     background-color: $white;
 }
-//gallery page lines
 
+//gallery page lines
 #hl1 {
     left: 570px;
     top: -4px;
@@ -860,29 +822,29 @@ footer {
     left: 61px;
     height: 230px;
 }
-//about page lines
 
+//about page lines
 #vl3 {
     top: 200px;
     right: 66px;
     height: 325px;
 }
-//corporate events
 
+//corporate events
 #hl3 {
     top: 20px;
     left: -140px;
     width: 130px;
 }
-//other events
 
+//other events
 #hl4 {
     top: 27px;
     left: -270px;
     width: 260px;
 }
-//wedding
 
+//wedding
 #hl5 {
     top: 24px;
     left: 160px;
@@ -929,11 +891,10 @@ footer {
     color: #4f0c03;
     padding-bottom: 20px;
 }
-//FORM starts HERe
 
+//FORM starts HERe
 .padd-tp70 {
     padding-top: 40px;
-
     .img-style {
         padding-left: 0;
     }
@@ -941,7 +902,6 @@ footer {
 
 .frm-head {
     margin: 30px 0;
-
     h3 {
         color: $brand-info;
         text-transform: uppercase;
@@ -950,7 +910,6 @@ footer {
         line-height: 0.5;
         letter-spacing: 2px;
     }
-
     p {
         color: #000000;
         text-align: center;
@@ -968,10 +927,8 @@ footer {
 
 .frm-occasion {
     margin: 30px 0;
-
     .btn-spcn {
         text-align: center;
-
         .btn-stylez {
             border-radius: 5px;
             background: $brand-info;
@@ -982,11 +939,9 @@ footer {
             margin: 20px 0;
         }
     }
-
     .form-group {
         border: 1px solid $brand-info;
         border-radius: 5px;
-
         input {
             border: none;
             background: transparent;
@@ -997,17 +952,14 @@ footer {
                 color: $brand-info;
                 font-size: 14px;
             }
-
             &:-moz-placeholder {
                 color: $brand-info;
                 font-size: 14px;
             }
-
             &::-moz-placeholder {
                 color: $brand-info;
                 font-size: 14px;
             }
-
             &:-ms-input-placeholder {
                 color: $brand-info;
                 font-size: 14px;
@@ -1018,7 +970,6 @@ footer {
 
 .frm-cont {
     margin: 30px 0;
-
     p {
         color: $brand-info;
         text-align: center;
@@ -1027,7 +978,6 @@ footer {
         margin: 2px;
         line-height: 1;
     }
-
     .cnt1 {
         font-size: 18px;
         letter-spacing: 1px;
@@ -1036,11 +986,9 @@ footer {
 
 .frm-det {
     margin: 40px;
-
     .mrg-bt20 {
         margin-bottom: 20px;
     }
-
     h3 {
         color: #4f0c03;
         text-transform: uppercase;
@@ -1050,7 +998,6 @@ footer {
         letter-spacing: 2px;
         margin-bottom: 10px;
     }
-
     p {
         color: $brand-info;
         text-align: justify;
@@ -1082,16 +1029,13 @@ footer {
     text-align: left;
     color: #fff;
     text-transform: capitalize;
-
     li {
         padding-left: 30px;
-
         a {
             font-size: 20px;
             // font-weight: 600;
             color: #fff;
             text-decoration: none;
-
             &:hover {
                 color: #fff;
                 text-decoration: none;
@@ -1103,7 +1047,6 @@ footer {
 .thankyou-pg {
     padding: 100px 0;
     height: calc(100vh - 60px);
-
     .navbar-default .navbar-nav {
         display: none;
     }
@@ -1117,6 +1060,28 @@ footer {
     padding: 10px 20px;
     font-size: 18px;
 }
+
+//Enquiry button
+.enquiry {
+    position: absolute;
+    top: 150px;
+    right: -19px;
+    z-index: 999;
+    border-radius: 4px;
+    background: #dec988;
+    border-color: #dec988;
+    color: #530a03;
+    font-weight: bold;
+    @include transform(rotate(-90deg));
+    &:hover,
+     :focus,
+     :active {
+        color: #530a03;
+        background-color: #dec988;
+        border-color: #dec988;
+    }
+}
+
 // #ic1 {
 //     top: 195px;
 //     left: 80px;
