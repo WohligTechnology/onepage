@@ -31,8 +31,8 @@ var jsArray = [
 var replacehostFrom = "http://localhost/demo/";
 var replacehostTo = "http://wohlig.co.in/demo2/";
 
-var ftpString = 'U2FsdGVkX196ZYP1rkTClckyQLedmpsl/ko9MSSjnnB6sAoIm5XtnezagPktqtElNuG0V9afEaoJg5u9lPfWJS0VRlTDCGXpzYKi4mwXcfemj4tj346ay73/WzNux2qk';
-var uploadingFolder = "1899";
+var ftpString = 'U2FsdGVkX1+WV71eCKpZemRW59GNfiOjhz9f1l1LpRFmpZJ7Vb3eE3qhfD+f4Ki5WAe/L1z5N2qAoMPdu/PNjM+LgXsX9F52I7msSeg/pjRvO9X1D0e0waRcfzQRxOnJ';
+var uploadingFolder = "1899latitude.com/";
 var password = "";
 
 
@@ -331,6 +331,6 @@ gulp.task('minifyhtml', ["minify:indexHTML", "minify:views", "templatecache"]);
 gulp.task('copy', ["copy:img", "copy:fonts"]);
 
 gulp.task('clearimage', ["clean:pImages", "clean:pFont"]);
-gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "gzipfile", 'clean:tmp', 'clean:tmp', "zip"));
-gulp.task('productionc', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', 'clean:production', "gzipfile", 'clean:tmp', 'clean:tmp', "zip", 'deploy'));
+gulp.task('production', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip"));
+gulp.task('productionc', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', 'clean:production', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip", 'deploy'));
 gulp.task('production2', gulpSequence(["copy:img", "copy:fonts", "sass:production", "minify:indexproduction", "minify:views"], 'clean:tmp', "concat:js", 'clean:tmp', "templatecache", "uglify:js", "minify:css", 'clean:tmp', "inlinesource", 'clean:tmp', "copy:indexhtml", 'clean:tmp', 'clean:tmp', "zip", 'renamePHP'));
