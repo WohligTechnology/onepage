@@ -1,4 +1,4 @@
-var adminURL = "";
+var adminurl = "http://localhost:1337/";
 if(isproduction)
 {
   adminURL =  "http://www.wohlig.co.in/demo/index.php";
@@ -56,6 +56,15 @@ var navigationservice = angular.module('navigationservice', [])
       $http({
         url: 'http://ting.in/1899latitude.com/mail.php?name='+mydata.name+'&email='+mydata.email+'&phone='+mydata.phone+'&comment='+mydata.comment+'&subject='+mydata.subject,
         method: 'GET',
+        withCredentials: true,
+        data: mydata
+      }).success(callback);
+    },
+    sendDataBackend: function(mydata, callback) {
+      //contact us
+      $http({
+        url: adminurl+'contactus/save',
+        method: 'POST',
         withCredentials: true,
         data: mydata
       }).success(callback);

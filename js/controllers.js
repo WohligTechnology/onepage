@@ -25,6 +25,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.flags = {};
   $scope.submitForm = function () {
+    console.log(" In home ");
     $scope.flags.thankyou = false;
     //console.log("ffff", $scope.formData);
     $scope.formData.subject = "Contact Us Form Details";
@@ -32,6 +33,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       if (res.value) {
         // $scope.flags.thankyou = true;
         // $scope.formData = {};
+        $state.go('thankyou');
+      } else {
+
+      }
+    });
+    //contact us
+    NavigationService.sendDataBackend($scope.formData, function (res) {
+      if (res.value==true) {
         $state.go('thankyou');
       } else {
 
