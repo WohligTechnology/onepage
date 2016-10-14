@@ -35,14 +35,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         // $scope.formData = {};
         $state.go('thankyou');
       } else {
-
+        $scope.showmsg = true;
       }
     });
+    $scope.showmsg = false;
     //contact us
     NavigationService.sendDataBackend($scope.formData, function (res) {
-      if (res.value==true) {
+      if (res.value == true) {
         $state.go('thankyou');
       } else {
+        $scope.showmsg = true;
 
       }
     });
@@ -177,8 +179,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       //console.log("ffff", $scope.formData);
       NavigationService.submitForm($scope.formData, function (res) {
         if (res.value) {
-          // $scope.flags.thankyou = true;
-          // $scope.formData = {};
+          $state.go('thankyou');
+        } else {
+
+        }
+      });
+      NavigationService.submitFormBackend($scope.formData, function (res) {
+        if (res.value) {
           $state.go('thankyou');
         } else {
 
