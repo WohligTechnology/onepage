@@ -40,14 +40,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     });
     $scope.showmsg = false;
     //contact us
-    NavigationService.sendDataBackend($scope.formData, function (res) {
-      if (res.value == true) {
-        $state.go('thankyou');
-      } else {
-        $scope.showmsg = true;
-
-      }
-    });
+    // NavigationService.sendDataBackend($scope.formData, function (res) {
+    //   if (res.value == true) {
+    //     $state.go('thankyou');
+    //   } else {
+    //     $scope.showmsg = true;
+    //
+    //   }
+    // });
   };
   //gallery images
   $scope.galleryImages = [{
@@ -184,13 +184,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         }
       });
-      NavigationService.submitFormBackend($scope.formData, function (res) {
-        if (res.value) {
-          $state.go('thankyou');
-        } else {
-
-        }
-      });
+      // NavigationService.submitFormBackend($scope.formData, function (res) {
+      //   if (res.value) {
+      //     $state.go('thankyou');
+      //   } else {
+      //
+      //   }
+      // });
     };
 
   })
