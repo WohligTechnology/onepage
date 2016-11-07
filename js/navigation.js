@@ -1,4 +1,4 @@
-// var adminurl = "http://localhost:1337/";
+//  var adminurl = "http://localhost:1337/";
 var adminurl = "http://104.155.129.33:92/";
 if (isproduction) {
   adminURL = "http://www.wohlig.co.in/demo/index.php";
@@ -61,7 +61,7 @@ var navigationservice = angular.module('navigationservice', [])
       console.log(mydata);
       //contact us
       $http({
-        url: adminurl + 'contactus/save',
+        url: adminurl + 'ContactUs/save',
         method: 'POST',
         withCredentials: true,
         data: mydata
