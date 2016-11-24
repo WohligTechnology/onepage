@@ -358,13 +358,14 @@ footer {
     }
     text-align: justify;
     .lt-eve {
-        top: 360px;
+        top: 340px;
         width: 50%;
         left: 270px;
     }
     .lt-box-bg {
         z-index: 999;
-        top: 155px;
+        top: 170px;      ///top:155px(earlier)
+        padding-bottom: 1% !important;
     }
     .lt-right-img {
         z-index: 100;
