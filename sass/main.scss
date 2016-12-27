@@ -761,6 +761,8 @@ footer {
 }
 
 .lf-video {
+  height: calc(100vh - 40px);
+  padding-top: 40px;
     .vid-img {
         opacity: 1;
         width: 100%;

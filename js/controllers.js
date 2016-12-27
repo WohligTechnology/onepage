@@ -45,7 +45,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $state.go('thankyou');
       } else {
         $scope.showmsg = true;
-    
+
       }
     });
   };
@@ -82,6 +82,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     "image": "img/gallery/15.jpg"
   }, {
     "image": "img/gallery/16.jpg"
+  }, {
+    "image": "img/gallery/17.jpg"
+  }, {
+    "image": "img/gallery/18.jpg"
+  }, {
+    "image": "img/gallery/19.jpg"
+  }, {
+    "image": "img/gallery/20.jpg"
+  }, {
+    "image": "img/gallery/21.jpg"
+  }, {
+    "image": "img/gallery/22.jpg"
+  }, {
+    "image": "img/gallery/23.jpg"
+  }, {
+    "image": "img/gallery/24.jpg"
+  }, {
+    "image": "img/gallery/25.jpg"
   }];
   console.log($scope.galleryImages);
   // gallery images end?\
@@ -188,7 +206,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         if (res.value) {
           $state.go('thankyou');
         } else {
-      
+
         }
       });
     };
