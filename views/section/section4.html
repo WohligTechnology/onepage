@@ -1,10 +1,34 @@
 <div class="video padding-tp40 padd-bt0">
   <div class="lf-video">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Z3W6bxf6mpQ?rel=0&amp;showinfo=0;" frameborder="0" allowfullscreen></iframe>
-    <!-- <div class="text-center">
+
+    <!-- FANCY BOX POP UP VIDEO -->
+
+    <div class="">
+      <a fancybox-box class="fancybox.iframe" href="https://www.youtube.com/embed/Z3W6bxf6mpQ?autoplay=1;rel=0&amp;showinfo=0;" title="">
+          <img ng-src="{{youtubeImg | youtubethumb}}" alt="video" class="img-responsive posi-abs posi-center">
+      </a>
+    </div>
+    <!-- FANCY BOX POP UP VIDEO END -->
+
+    <!-- FULL SCREEN VIDEO BOX  -->
+
+    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Z3W6bxf6mpQ?rel=0&amp;showinfo=0;" frameborder="0" allowfullscreen></iframe> -->
+    <!-- FULL SCREEN VIDEO END -->
+
+    <!-- TEST VIDEO BOX  -->
+    <!-- <iframe width="640" ng-if="!showVideo" height="360" ng-src="{{'https://www.youtube.com/embed/Z3W6bxf6mpQ'?autoplay=1&modestbranding=0&showinfo=0&rel=0&loop=1'|}}" frameborder="0" allowfullscreen
+   style="width: 100%; height: 100vh;">
+   </iframe> -->
+   <!-- TEST VIDEO BOX END -->
+    <div class="text-center cursor-pointr">
       <img src="img/play.png" alt="" class="posi-abs img-pos">
-      <p class="posi-abs posi-center">Coming Soon</p>
-    </div> -->
+      <!-- <p class="posi-abs posi-center">Coming Soon</p> -->
+    </div>
+
+    <!-- VIDEO OVERLAY FOR SCROLL -->
+    <!-- <div class="video-overlay"></div> -->
+    <!-- VIDEO OVERLAY FOR SCROLL END -->
+
     <div class="enq-btn">
       <button ui-sref="form" type="button" class="btn btn-default enquiry">Enquiry</button>
     </div>

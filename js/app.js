@@ -134,6 +134,13 @@ firstapp.directive('fancyboxBox', function ($document) {
 });
 
 
+firstapp.filter('youtubethumb', function() {
+   return function(input, onlyid) {
+       if (input) {
+           return "http://img.youtube.com/vi/" + input + "/maxresdefault.jpg";
+       }
+   };
+});
 firstapp.config(function ($translateProvider) {
   $translateProvider.translations('en', LanguageEnglish);
   $translateProvider.translations('hi', LanguageHindi);

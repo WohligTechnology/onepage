@@ -2,7 +2,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $stateParams) {
   //Used to name the .html file
-
+$scope.youtubeImg = 'Z3W6bxf6mpQ';
   console.log("Testing Consoles");
 
   $scope.template = TemplateService.changecontent("home");
