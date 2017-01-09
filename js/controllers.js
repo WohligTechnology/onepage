@@ -87,17 +87,17 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
   }, {
     "image": "img/gallery/18.jpg"
   }, {
-    "image": "img/gallery/19.jpg"
+    "image": "img/gallery/19.png"
   }, {
     "image": "img/gallery/20.jpg"
   }, {
-    "image": "img/gallery/21.jpg"
+    "image": "img/gallery/21.png"
   }, {
     "image": "img/gallery/22.jpg"
   }, {
-    "image": "img/gallery/23.jpg"
+    "image": "img/gallery/23.png"
   }, {
-    "image": "img/gallery/24.jpg"
+    "image": "img/gallery/24.png"
   }, {
     "image": "img/gallery/25.jpg"
   }];
