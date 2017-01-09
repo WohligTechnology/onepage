@@ -2,6 +2,7 @@
 //var adminurl = "http://104.155.129.33:92/";
 //var NEW CLOUD URL var adminurl ="http://104.154.110.195:92/";
 
+// var adminurl ="http://localhost:1337/";
 
 var adminurl ="http://104.154.110.195:92/";
 
@@ -67,7 +68,7 @@ var navigationservice = angular.module('navigationservice', [])
       console.log(mydata);
       //contact us
       $http({
-        url: adminurl + 'ContactUs/save',
+        url: adminurl + 'ContactUs/saveContactUs',
         method: 'POST',
         withCredentials: true,
         data: mydata
@@ -78,7 +79,7 @@ var navigationservice = angular.module('navigationservice', [])
       console.log(mydata);
       //contact us
       $http({
-        url: adminurl + 'enquiry/save',
+        url: adminurl + 'enquiry/saveEnquiry',
         method: 'POST',
         withCredentials: true,
         data: mydata
