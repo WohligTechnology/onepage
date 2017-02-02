@@ -1094,6 +1094,23 @@ footer {
     font-size: 18px;
 }
 
+.occasion-selectbox{
+  select, .form-control{
+    border: none;
+    color: $brand-info;
+    &:focus, &:active, &:hover{
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.frm-occasion .occasion-selectbox{
+  select, .form-control{
+    border-radius: 6px;
+  }
+}
+
 //Enquiry button
 .enquiry {
     position: absolute;
