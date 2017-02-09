@@ -101,13 +101,13 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
   }, {
     "image": "img/gallery/25.jpg"
   }];
-  console.log($scope.galleryImages);
+  // console.log($scope.galleryImages);
   // gallery images end?\
   $scope.changePage = function (text) {
     console.log(text);
     var length = $(".fp-section").length;
-    console.log(length);
-    console.log($(".fp-section"));
+    // console.log(length);
+    // console.log($(".fp-section"));
     // if (typeof $.fn.fullpage.destroy == 'function') {
     //   $.fn.fullpage.destroy('all');
     // }
@@ -189,6 +189,7 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
     if (typeof $.fn.fullpage.destroy == 'function') {
       $.fn.fullpage.destroy('all');
     }
+
     $scope.formData = {};
     $scope.flags = {};
     $scope.submitForm = function () {
@@ -224,7 +225,7 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
 .controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
 
   $scope.changeLanguage = function () {
-    console.log("Language CLicked");
+    // console.log("Language CLicked");
 
     if (!$.jStorage.get("language")) {
       $translate.use("hi");
