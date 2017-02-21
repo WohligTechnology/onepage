@@ -402,6 +402,15 @@ footer {
     }
 }
 
+.contact-tel{
+  color: $brand-info;
+  text-decoration: none;
+  &:hover, &:active, &:focus{
+    color: $brand-info;
+    text-decoration: none;
+  }
+}
+
 .scl-col {
     li {
         margin-top: 0;
@@ -1262,6 +1271,17 @@ footer {
         margin: 0;
         font-weight: 600;
         line-height: 1;
+    }
+
+    .footer-tel{
+      a{
+        color: $brand-info;
+        text-decoration: none;
+        &:hover, &:active, &:focus{
+          color: $brand-info;
+          text-decoration: none;
+        }
+      }
     }
 }
 //NEW FORM DESIGN END
