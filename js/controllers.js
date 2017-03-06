@@ -153,6 +153,11 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
       $scope.changePage($stateParams.id);
     }, 1000);
   });
+  $scope.$on('$viewContentLoaded', function () {
+    $timeout(function () {
+      $('#maincontact').validate();
+    },0);
+  });
 })
 
 .controller('ThanksCtrl', function ($scope, TemplateService, NavigationService, $timeout, $window) {
@@ -211,6 +216,12 @@ $scope.youtubeImg = 'Z3W6bxf6mpQ';
         }
       });
     };
+    $scope.$on('$viewContentLoaded', function () {
+      $timeout(function () {
+        $('#enquiryform').validate();
+        console.log("yo");
+      },0);
+    });
 
   })
   .controller('headerctrl', function ($scope, TemplateService) {

@@ -34,7 +34,8 @@
     "angular-swiper": "^0.4.0",
     "smart-app-banner": "https://github.com/kudago/smart-app-banner.git",
     "angulartics-facebook-pixel": "^0.2.0",
-    "fullpage.js": "^2.8.6"
+    "fullpage.js": "^2.8.6",
+    "jquery-validation": "^1.16.0"
   },
   "devDependencies": {
     "angular-translate": "^2.11.0"

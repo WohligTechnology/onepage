@@ -17,7 +17,7 @@
                 </div>
                 <div class="frm-occasion">
                     <!-- <form name="contactUsForm" ng-submit="submitForm(formData)" class="form"> -->
-                    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <form id="enquiryform" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         <input type=hidden name="oid" value="00D6F000000Dr5h">
                         <input type=hidden name="retURL" value="http://www.1899latitude.com/thankyou">
                         <!--  ----------------------------------------------------------------------  -->
@@ -33,14 +33,14 @@
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                         <!-- <input type="text" ng-model="formData.name" name="name" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Name" required> -->
-                                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-control disp-ib" placeholder="Name" required/>
+                                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-control disp-ib" placeholder="Name" data-rule-required="true" required/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
                                         <!-- <input type="tel" ng-model="formData.phone" name="phone" class="form-control" id="exampleInputEmail3" maxlength="12" placeholder="Phone" required> -->
-                                        <input id="mobile" class="form-control" maxlength="40" name="mobile" size="20" type="text" placeholder="Phone" required />
+                                        <input id="mobile" class="form-control" maxlength="40" name="mobile" size="20" type="text" placeholder="Phone" data-rule-number="true" required />
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                                     <div class="lt-icon input-group">
                                         <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
                                         <!-- <input type="email" ng-model="formData.email" name="email" class="form-control disp-ib" id="exampleInputEmail3" placeholder="Email" required> -->
-                                        <input id="email" class="form-control disp-ib" maxlength="80" name="email" size="20" type="text" placeholder="Email" required />
+                                        <input id="email" class="form-control disp-ib" maxlength="80" name="email" size="20" type="text" placeholder="Email" data-rule-email="true" required />
                                     </div>
                                 </div>
 
