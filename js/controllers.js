@@ -203,18 +203,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.navigation = NavigationService.getnav();
 
-    // $scope.fireConversion = function () {
-    //   $window.google_trackConversion({
-    //     google_conversion_id: 871611672,
-    //     google_conversion_language: "en",
-    //     google_conversion_format: "3",
-    //     google_conversion_color: "ffffff",
-    //     google_conversion_label: "1e3dCKHpiGsQmPrOnwM",
-    //     google_remarketing_only: false
-    //   });
-    // };
+    $scope.fireConversion = function () {
+      $window.google_trackConversion({
+        google_conversion_id: 871611672,
+        google_conversion_language: "en",
+        google_conversion_format: "3",
+        google_conversion_color: "ffffff",
+        google_conversion_label: "1e3dCKHpiGsQmPrOnwM",
+        google_remarketing_only: false
+      });
+    };
 
-    // $scope.fireConversion();
+    $scope.fireConversion();
 
 })
 
@@ -277,7 +277,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 var msg = getParameterByName('source');
 
                 if (msg == "programmatic") {
-            
+
                     var x = document.getElementById("lead_source");
                     x.remove(x.selectedIndex);
                     // add new option which has value programmatic and text programmatic
